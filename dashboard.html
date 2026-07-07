@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myanmar Lisence Plate Detection</title>
+    <link rel="icon" type="image/jpeg" href="/static/icon.svg?v=1">
+    <link rel="stylesheet" href="/static/style.css?v=126-35">
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar">
+        <div class="brand">
+            <img class="brand-mark" src="/static/LOGO.jpg?v=1" alt="Sentinel LPR logo">
+        </div>
+
+        <nav class="nav-list" aria-label="Main navigation">
+            <button class="nav-item active" data-view="live">
+                <span class="nav-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="m17 10 4-2v8l-4-2"/><circle cx="10" cy="12" r="3"/></svg>
+                </span>
+                <span class="nav-label">Live</span>
+            </button>
+            <button class="nav-item" id="openCapturesBtn" data-view="captures">
+                <span class="nav-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 8a2 2 0 0 1 2-2h2l1.5-2h5L16 6h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><circle cx="12" cy="13" r="4"/></svg>
+                </span>
+                <span class="nav-label">Capture</span>
+            </button>
+            <button class="nav-item" id="openLogsBtn" data-view="events">
+                <span class="nav-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>
+                </span>
+                <span class="nav-label">Events</span>
+            </button>
+            <button class="nav-item" data-view="settings">
+                <span class="nav-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.86 2.86-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21H9.55v-.1A1.7 1.7 0 0 0 8.5 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06-2.86-2.86.06-.06A1.7 1.7 0 0 0 4.1 15a1.7 1.7 0 0 0-1.5-1H2v-4h.6a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.34-1.88l-.06-.06L6.56 4.2l.06.06A1.7 1.7 0 0 0 8.5 4.6a1.7 1.7 0 0 0 1-1.5V3h4.05v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.88-.34l.06-.06 2.86 2.86-.06.06A1.7 1.7 0 0 0 19.6 9a1.7 1.7 0 0 0 1.5 1h.9v4h-.9a1.7 1.7 0 0 0-1.7 1Z"/></svg>
+                </span>
+                <span class="nav-label">Settings</span>
+            </button>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="sidebar-clock">
+                <span id="currentDate">--</span>
+                <strong id="currentTime">--:--:--</strong>
+            </div>
+            <div class="sidebar-health">
+                <div class="health-dot" id="sidebarHealthDot"></div>
+                <div><strong id="sidebarHealthTitle">System Online</strong><span id="sidebarHealth">Checking services...</span></div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="app-view" id="liveView">
+        <section class="status-strip">
+            <div class="status-card">
+                <span class="status-icon online" id="serverStatusIcon">&#9679;</span>
+                <div><small>SERVER</small><strong id="serverStatusText">Online</strong></div>
+            </div>
+            <div class="status-card">
+                <span class="status-icon" id="cameraStatusIcon">&#9679;</span>
+                <div><small>CAMERA</small><strong id="cameraStatus">Standby</strong></div>
+            </div>
+            <div class="status-card">
+                <span class="status-icon online">&#9679;</span>
+                <div><small>OCR ENGINE</small><strong id="ocrStatus">Loading</strong></div>
+            </div>
+            <div class="status-card">
+                <span class="status-icon accent">&#9679;</span>
+                <div><small>EVENTS</small><strong id="eventCount">0 detected</strong></div>
+            </div>
+        </section>
+
+        <section class="mode-bar">
+            <div class="mode-tabs" role="tablist">
+                <button class="mode-tab active" id="tabWebcam">Live Camera</button>
+                <button class="mode-tab" id="tabVideo">Video File</button>
+                <button class="mode-tab" id="tabImage">Image File</button>
+                <button class="mode-tab" id="tabCamera">Network Camera</button>
+            </div>
+            <div class="mode-actions">
+                <button class="btn ghost" id="stopBtn">Stop</button>
+                <button class="btn primary" id="startBtn">Start live view</button>
+                <button class="btn primary" id="detectBtn">Run detection</button>
+                <button class="btn primary" id="connectCameraBtn">Connect</button>
+                <button class="btn ghost" id="disconnectCameraBtn">Disconnect</button>
+            </div>
+        </section>
+
+        <section class="workspace-grid">
+            <article class="camera-card">
+                <div class="card-header">
+                    <div>
+                        <div class="camera-name"><span class="live-badge">LIVE</span><strong id="feedTitle">Front Gate</strong></div>
+                    </div>
+                    <div class="camera-tools">
+                        <span class="signal-bars"><i></i><i></i><i></i></span>
+                        <span id="trackingCount">0 tracks</span>
+                    </div>
+                </div>
+                <div class="feed-preview" id="feedPreview">
+                    <div class="scan-line"></div>
+                    <div class="feed-empty" id="placeholderBox">
+                        <div class="feed-symbol">&#9638;</div>
+                        <strong id="feedStatus">Camera standing by</strong>
+                        <span>Start the live view or choose another source.</span>
+                    </div>
+                    <img id="videoFeed" class="video-feed" alt="Live camera feed">
+                    <img id="imagePreview" class="image-preview" alt="Uploaded image preview">
+                    <video id="videoPreview" class="video-feed" muted controls playsinline></video>
+                    <div class="camera-overlay"><span>CAM-01</span><span id="overlayTime">--:--:--</span></div>
+                </div>
+                <div class="source-controls">
+                    <div class="upload-actions" id="videoControls">
+                        <button class="btn ghost" id="uploadVideoBtn">Choose video</button>
+                        <span class="file-info" id="videoFileName">No video selected</span>
+                    </div>
+                    <div class="upload-actions" id="imageControls">
+                        <button class="btn ghost" id="uploadImageBtn">Choose image</button>
+                        <span class="file-info" id="imageFileName">No image selected</span>
+                    </div>
+                    <div class="upload-actions" id="cameraControls">
+                        <input type="text" id="cameraUrl" class="input" placeholder="rtsp://camera.local/stream">
+                    </div>
+                    <div class="settings-box" id="settingsBox">
+                        <span class="settings-label">Orientation</span>
+                        <select id="rotationSelect" class="input">
+                            <option value="none">No rotation</option>
+                            <option value="90cw">90&deg; clockwise</option>
+                            <option value="90ccw">90&deg; counter-clockwise</option>
+                            <option value="180">180&deg;</option>
+                        </select>
+                        <label class="switch-label"><input type="checkbox" id="mirrorCheckbox"><span></span>Mirror feed</label>
+                        <button class="btn ghost" id="resetOrientationBtn">Reset</button>
+                    </div>
+                </div>
+            </article>
+
+            <aside class="detection-panel">
+                <div class="plate-capture" id="plateImage">
+                    <span>No plate captured</span>
+                </div>
+                <div class="plate-number" id="plateNumber">--- ---</div>
+                <div class="confidence-row">
+                    <span>Recognition confidence</span>
+                    <strong id="confidenceValue">--</strong>
+                </div>
+                <div class="confidence-track"><span id="confidenceBar"></span></div>
+                <div class="info-grid" id="infoBox">
+                    <div><span>Region</span><strong>-</strong></div>
+                    <div><span>Township</span><strong>-</strong></div>
+                    <div><span>Color</span><strong>-</strong></div>
+                    <div><span>Vehicle type</span><strong>-</strong></div>
+                    <div class="wide"><span>Matched model</span><strong>-</strong></div>
+                </div>
+                <div class="multi-plate-panel" id="multiPlatePanel" hidden>
+                    <div class="multi-plate-title">
+                        <span id="multiPlateTitle">Multi detection</span>
+                        <strong id="multiPlateCount">0 plates</strong>
+                    </div>
+                    <div class="multi-plate-list" id="multiPlateList"></div>
+                </div>
+                <div class="detail-actions">
+                    <button class="btn ghost" id="openCapturesBtn2">Open captures</button>
+                    <button class="btn ghost" id="openLogsBtn2">Open Logs</button>
+                </div>
+            </aside>
+        </section>
+
+        </div>
+
+        <section class="captures-view app-view" id="capturesView" hidden>
+            <div class="captures-heading">
+                <div><div class="eyebrow">Monitoring / Capture</div><h1>Plate Captures</h1></div>
+                <div class="capture-actions">
+                    <strong id="captureCount">0 images</strong>
+                    <button class="btn ghost" id="refreshCapturesBtn">Refresh</button>
+                </div>
+            </div>
+            <section class="capture-gallery" id="captureGallery">
+                <div class="capture-empty">
+                    <strong>Loading captures...</strong>
+                    <span>Please wait.</span>
+                </div>
+            </section>
+        </section>
+
+        <section class="events-page-view app-view" id="eventsView" hidden>
+            <div class="captures-heading">
+                <div><div class="eyebrow">Monitoring / Raw Logs</div><h1>Detection Logs</h1></div>
+                <div class="capture-actions">
+                    <strong id="eventsPageCount">0 events</strong>
+                    <button class="btn ghost" id="refreshEventsBtn">Refresh</button>
+                </div>
+            </div>
+            <div class="event-cyber-stats page-stats">
+                <div><span>Total Events</span><strong id="eventsPageTotalMetric">0</strong></div>
+                <div><span>Success</span><strong id="eventsPageSuccessMetric">0</strong></div>
+                <div><span>Fail</span><strong id="eventsPageFailMetric">0</strong></div>
+            </div>
+            <section class="events-console" id="eventsConsole">
+                <div class="capture-empty">
+                    <strong>Loading raw logs...</strong>
+                    <span>Please wait.</span>
+                </div>
+            </section>
+        </section>
+
+        <section class="settings-view app-view" id="settingsView" hidden>
+            <div class="captures-heading">
+                <div><div class="eyebrow">System / Settings</div><h1>Settings</h1></div>
+                <div class="capture-actions">
+                    <button class="btn ghost" id="resetSettingsBtn">Reset</button>
+                    <button class="btn primary" id="saveSettingsBtn">Apply</button>
+                </div>
+            </div>
+            <div class="settings-grid">
+                <article class="settings-card">
+                    <div class="settings-card-head">
+                        <span class="settings-card-icon">UI</span>
+                        <div><strong>Appearance</strong><span>Dashboard display preferences</span></div>
+                    </div>
+                    <label class="setting-row">
+                        <span><strong>Theme</strong><small>Switch between dark, light, or system mode.</small></span>
+                        <select id="themeSelect" class="input">
+                            <option value="dark">Dark</option>
+                            <option value="light">Light</option>
+                            <option value="system">System</option>
+                        </select>
+                    </label>
+                    <label class="setting-row">
+                        <span><strong>Accent color</strong><small>Change the cyber highlight color.</small></span>
+                        <select id="accentSelect" class="input">
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="amber">Amber</option>
+                            <option value="violet">Violet</option>
+                        </select>
+                    </label>
+                    <label class="setting-row">
+                        <span><strong>Compact layout</strong><small>Reduce spacing for smaller laptop screens.</small></span>
+                        <input type="checkbox" id="compactToggle">
+                    </label>
+                </article>
+
+                <article class="settings-card">
+                    <div class="settings-card-head">
+                        <span class="settings-card-icon">LIVE</span>
+                        <div><strong>Live Monitoring</strong><span>Control polling and camera source behavior</span></div>
+                    </div>
+                    <label class="setting-row">
+                        <span><strong>Refresh interval</strong><small>How often live status and events refresh.</small></span>
+                        <select id="refreshSelect" class="input">
+                            <option value="1000">Fast - 1s</option>
+                            <option value="2000">Normal - 2s</option>
+                            <option value="5000">Light - 5s</option>
+                        </select>
+                    </label>
+                    <label class="setting-row">
+                        <span><strong>Remember source mode</strong><small>Reopen the last selected Live/Video/Image/Camera mode.</small></span>
+                        <input type="checkbox" id="rememberModeToggle">
+                    </label>
+                    <label class="setting-row">
+                        <span><strong>Reduce scan effects</strong><small>Disable animated scan line for lower GPU usage.</small></span>
+                        <input type="checkbox" id="reduceMotionToggle">
+                    </label>
+                </article>
+
+                <article class="settings-card">
+                    <div class="settings-card-head">
+                        <span class="settings-card-icon">LOG</span>
+                        <div><strong>Events</strong><span>Detection feedback and log display behavior</span></div>
+                    </div>
+                    <label class="setting-row">
+                        <span><strong>Fail highlight</strong><small>Keep failed detections visually highlighted.</small></span>
+                        <input type="checkbox" id="failHighlightToggle">
+                    </label>
+                    <label class="setting-row">
+                        <span><strong>Auto-open latest capture</strong><small>Update the plate preview from the newest DB event.</small></span>
+                        <input type="checkbox" id="latestPreviewToggle">
+                    </label>
+                    <div class="settings-note" id="settingsStatus">Settings are saved in this browser.</div>
+                </article>
+
+                <article class="settings-card system-summary-card">
+                    <div class="settings-card-head">
+                        <span class="settings-card-icon">SYS</span>
+                        <div><strong>System Summary</strong><span>Current browser and backend status</span></div>
+                    </div>
+                    <div class="settings-summary">
+                        <div><span>Backend</span><strong id="settingsBackendState">Checking</strong></div>
+                        <div><span>OCR</span><strong id="settingsOcrState">-</strong></div>
+                        <div><span>Events</span><strong id="settingsEventState">0</strong></div>
+                        <div><span>Camera</span><strong id="settingsCameraState">Standby</strong></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</div>
+
+<div class="modal-backdrop" id="logDetailModal" hidden>
+    <div class="log-detail-modal" role="dialog" aria-modal="true" aria-labelledby="logDetailTitle">
+        <div class="modal-head">
+            <div><small>Raw Log Detail</small><strong id="logDetailTitle">Detection Log</strong></div>
+            <button class="icon-btn" id="closeLogModalBtn" title="Close">&times;</button>
+        </div>
+        <div class="modal-body" id="logDetailBody"></div>
+    </div>
+</div>
+
+<input type="file" id="imageInput" accept="image/*" hidden>
+<input type="file" id="videoInput" accept="video/*" hidden>
+    <script src="/static/app.js?v=126-34"></script>
+</body>
+</html>

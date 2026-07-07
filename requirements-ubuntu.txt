@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-multipart
+aiofiles
+opencv-python-headless
+numpy<2.4
+ultralytics
+easyocr
+paddlepaddle
+paddleocr
+pillow

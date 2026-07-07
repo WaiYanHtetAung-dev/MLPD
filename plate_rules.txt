@@ -1,0 +1,29 @@
+Private: background-color="black", text-color="white", plate="Black"
+Format : up-region="MDY-14", mid-number="3G-7224", down-model="HONDA FIT"
+
+Hire,truck : background-color="red", text-color="white" plate="Red"
+Format : up-region="MDY-8", mid-number="7R-1234", down-model="MAN TGX"
+
+Religious : background-color="yellow", text-color="black" plate="Yellow"
+Format : up-region="YGN-18", mid-number="RLG-1234", down-model="TOYOTA MARK II"
+
+Industrial zone : background-color="red", text-color="white" plate="Red"
+Format : up-region="YGN-12", mid-number="8A-1234", down-model="I-Zone"
+
+Taxi : background-color="red", text-color="white" plate="Red"
+Format : up-region="YGN-12", mid-number="AA-1234", down-model="TOYOTA PROBOX"
+
+UN: background-color="white", text-color="white", plate="White"
+Format: up-region="YGN-12", mid-number="UN 12-34", down-model="BMW X5"
+
+Embassy: background-color="white", text-color="red", plate="White"
+Format: up-region="YGN-12", mid-number="CD 12-34", down-model="BMW X5"
+
+International Organization: background-color="white", text-color="red", plate="White"
+Format: plate="White", up-region="YGN-12", mid-number="IO-1234", down-model="HONDA FIT"
+
+Touring Vehicle: background-color="blue", text-color="white", plate="Blue"
+Format: up-region="YGN-12", mid-number="1A-1234", down-model="SENOVA"
+
+Hearse: background-color="red", text-color="white", plate="Red"
+Format: up-region="YGN", mid-number="HSE-1234", down-model="TOYOTA HIACE"

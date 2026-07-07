@@ -1,0 +1,4311 @@
+
+============================================================
+TIME: 2026-06-04 13:35:22
+FILE: D:\kosithu\kosithu\plate_captures/plate_20260604_133522_304.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 3F-6038
+BOTTOM TEXT (OCR): 0U 0UUU
+CAR MODEL (MATCHED): 0U 0UUU
+COLOR: black
+VEHICLE TYPE: Private / Hire
+DISPLAY: 3F-6038
+============================================================
+
+============================================================
+TIME: 2026-06-04 13:36:54
+FILE: D:\kosithu\kosithu\plate_captures/plate_20260604_133654_098.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: YGN-6
+BOTTOM TEXT (OCR): 0U 0UUU
+CAR MODEL (MATCHED): 0U 0UUU
+COLOR: black
+VEHICLE TYPE: Private Car
+DISPLAY: YGN-6
+============================================================
+
+============================================================
+TIME: 2026-06-04 13:50:44
+FILE: D:\kosithu\kosithu\plate_captures/plate_20260604_135044_706.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 3G-6038
+BOTTOM TEXT (OCR): H0NDA PARTMER
+CAR MODEL (MATCHED): HONDA PARTNER
+COLOR: black
+VEHICLE TYPE: Private / Hire
+DISPLAY: 3G-6038
+============================================================
+
+============================================================
+TIME: 2026-06-04 13:58:03
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_135803_459.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 3G-6038
+BOTTOM TEXT (OCR): H0NDA PARTMER
+CAR MODEL (MATCHED): HONDA PARTNER
+COLOR: black
+VEHICLE TYPE: Private / Hire
+DISPLAY: 3G-6038
+============================================================
+
+============================================================
+TIME: 2026-06-04 14:10:55
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_141055_531.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 3S-8978
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private / Hire
+DISPLAY: 3S-8978
+============================================================
+
+============================================================
+TIME: 2026-06-04 14:31:10
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_143110_485.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 3G-6038
+BOTTOM TEXT (OCR): H0NDA PARTMER
+CAR MODEL (MATCHED): HONDA PARTNER
+COLOR: black
+VEHICLE TYPE: Private / Hire
+DISPLAY: 3G-6038
+============================================================
+
+============================================================
+TIME: 2026-06-04 14:32:12
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_143212_271.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 3G-6038
+BOTTOM TEXT (OCR): H0NDA PARTMER
+CAR MODEL (MATCHED): HONDA PARTNER
+COLOR: black
+VEHICLE TYPE: Private / Hire
+DISPLAY: 3G-6038
+============================================================
+
+============================================================
+TIME: 2026-06-04 14:35:09
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_143509_298.jpg
+REGION: YGN
+TOWNSHIP: 22
+MAIN NUMBER: 8J-6900
+BOTTOM TEXT (OCR): 8J6900
+CAR MODEL (MATCHED): 8J6900
+COLOR: blue
+VEHICLE TYPE: Private / Hire
+DISPLAY: 8J-6900
+============================================================
+
+============================================================
+TIME: 2026-06-04 14:38:07
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_143807_841.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): N1SSAN CL1PPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private / Hire
+DISPLAY: 2K-4389
+============================================================
+
+============================================================
+TIME: 2026-06-04 14:42:14
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_144214_751.jpg
+REGION: BGO
+TOWNSHIP: 18
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): D0NGFENG
+CAR MODEL (MATCHED): DONGFENG EV
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: D0NGFENG
+============================================================
+
+============================================================
+TIME: 2026-06-04 15:09:37
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_150937_664.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 0Q-808
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: 0Q-808
+============================================================
+
+============================================================
+TIME: 2026-06-04 15:24:31
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_152431_220.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+============================================================
+
+============================================================
+TIME: 2026-06-04 16:44:25
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_164425_750.jpg
+REGION: YGN
+TOWNSHIP: 19
+MAIN NUMBER: 6Q-6555
+BOTTOM TEXT (OCR): MERCEDES BENZ
+CAR MODEL (MATCHED): MERCEDES-BENZ
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6Q-6555
+============================================================
+
+============================================================
+TIME: 2026-06-04 16:46:46
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_164646_744.jpg
+REGION: YGN
+TOWNSHIP: 36
+MAIN NUMBER: 9N-6612
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9N-6612
+============================================================
+
+============================================================
+TIME: 2026-06-04 22:46:14
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_224614_458.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAW VOLKSWAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+============================================================
+
+============================================================
+TIME: 2026-06-04 22:51:41
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_225141_840.jpg
+REGION: BGO
+TOWNSHIP: 18
+MAIN NUMBER: 9S-1308
+BOTTOM TEXT (OCR): DONGFENG VENUCIA VX6
+CAR MODEL (MATCHED): DONGFENG EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-1308
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:07:19
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_230719_778.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): RLG9
+CAR MODEL (MATCHED): RLG9
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:22:33
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_232233_473.jpg
+REGION: BGO
+TOWNSHIP: 18
+MAIN NUMBER: 9S-1308
+BOTTOM TEXT (OCR): DONGFENG VENUCIA VX6
+CAR MODEL (MATCHED): DONGFENG VENUCIA VX6
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-1308
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:22:41
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_232241_929.jpg
+REGION: YGN
+TOWNSHIP: 36
+MAIN NUMBER: 9N-6612
+BOTTOM TEXT (OCR): TONOTA COROLLA FIELDER
+CAR MODEL (MATCHED): TOYOTA COROLLA FIELDER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9N-6612
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:23:18
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_232318_621.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): RLG9
+CAR MODEL (MATCHED): RLG9
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:24:34
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_232434_322.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): RLG9
+CAR MODEL (MATCHED): RLG9
+COLOR: yellow
+VEHICLE TYPE: Unknown
+DISPLAY: -
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:24:39
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_232439_464.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 3G-6038
+BOTTOM TEXT (OCR): HONDA PARTMER
+CAR MODEL (MATCHED): HONDA PARTNER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3G-6038
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:26:29
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_232629_480.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: -
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:26:34
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_232634_713.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 3G-6038
+BOTTOM TEXT (OCR): HONDA PARTMER
+CAR MODEL (MATCHED): HONDA PARTNER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3G-6038
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:36:04
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233604_012.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 3S-8978
+BOTTOM TEXT (OCR): LEXUS RX 350
+CAR MODEL (MATCHED): LEXUS RX 350
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-8978
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:36:09
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233609_435.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): BYD YANG XANG UB
+CAR MODEL (MATCHED): BYD YANG WANG U8
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:36:18
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233618_094.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): NISSAN CLIPPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2K-4389
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:36:26
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233626_132.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAW VOLKSWAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:36:35
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233635_544.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): SUZUKI
+CAR MODEL (MATCHED): SUZUKI APV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:36:41
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233641_683.jpg
+REGION: YGN
+TOWNSHIP: 19
+MAIN NUMBER: 6Q-6555
+BOTTOM TEXT (OCR): MERCEDES BENZ
+CAR MODEL (MATCHED): MERCEDES-BENZ
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6Q-6555
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:36:46
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233646_831.jpg
+REGION: NPW
+TOWNSHIP: 7
+MAIN NUMBER: 6R-1119
+BOTTOM TEXT (OCR): CHEVROLET MALIBU
+CAR MODEL (MATCHED): CHEVROLET MALIBU
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6R-1119
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:36:52
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233652_180.jpg
+REGION: YGN
+TOWNSHIP: 40
+MAIN NUMBER: 4Q-8429
+BOTTOM TEXT (OCR): SUZUKI SWIFT
+CAR MODEL (MATCHED): SUZUKI SWIFT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 4Q-8429
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:36:58
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233658_903.jpg
+REGION: BGO
+TOWNSHIP: 18
+MAIN NUMBER: 9S-1308
+BOTTOM TEXT (OCR): DONGFENG VENUCIA VX6
+CAR MODEL (MATCHED): DONGFENG VENUCIA VX6
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-1308
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:37:04
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233704_349.jpg
+REGION: YGN
+TOWNSHIP: 22
+MAIN NUMBER: 8J-6900
+BOTTOM TEXT (OCR): I ZOME
+CAR MODEL (MATCHED): I ZOME
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 8J-6900
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:37:12
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233712_742.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6R-1119
+BOTTOM TEXT (OCR): CRETIELEY WOLIEU
+CAR MODEL (MATCHED): CRETIELEY WOLIEU
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6R-1119
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:37:17
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233717_805.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: RLG-6894
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-6894
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:37:23
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233723_689.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: RLG-7344
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-7344
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:37:28
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233728_924.jpg
+REGION: YGN
+TOWNSHIP: 43
+MAIN NUMBER: 9H-5896
+BOTTOM TEXT (OCR): TOYOTAPROB0S
+CAR MODEL (MATCHED): TOYOTA PROBOX
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9H-5896
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:37:34
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233734_680.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 2F-5191
+BOTTOM TEXT (OCR): SUZUKI CARRY
+CAR MODEL (MATCHED): SUZUKI CARRY
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2F-5191
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:37:40
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233740_029.jpg
+REGION: MDY
+TOWNSHIP: 1
+MAIN NUMBER: 6L-3915
+BOTTOM TEXT (OCR): SVRUE0
+CAR MODEL (MATCHED): SVRUE0
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6L-3915
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:37:44
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233744_596.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 9Q-2355
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9Q-2355
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:37:49
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233749_983.jpg
+REGION: YGN
+TOWNSHIP: 38
+MAIN NUMBER: 3H-8998
+BOTTOM TEXT (OCR): MITSUBISHI RVR
+CAR MODEL (MATCHED): MITSUBISHI RVR
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3H-8998
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:37:56
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_233756_319.jpg
+REGION: NPW
+TOWNSHIP: 2
+MAIN NUMBER: 5P-6859
+BOTTOM TEXT (OCR): TO1O1A HEUL 8ET
+CAR MODEL (MATCHED): TO1O1A HEUL 8ET
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5P-6859
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:59:02
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_235902_879.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): BYD YANG KANG U8
+CAR MODEL (MATCHED): BYD YANG WANG U8
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:59:07
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_235907_275.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: RLG-6894
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-6894
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:59:12
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_235912_575.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: RLG-9658
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-9658
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:59:18
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_235918_616.jpg
+REGION: YGN
+TOWNSHIP: 22
+MAIN NUMBER: 8J-6900
+BOTTOM TEXT (OCR): I ZOME
+CAR MODEL (MATCHED): I ZOME
+COLOR: blue
+VEHICLE TYPE: Touring Vehicle
+DISPLAY: 8J-6900
+============================================================
+
+============================================================
+TIME: 2026-06-04 23:59:24
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260604_235924_469.jpg
+REGION: YGN
+TOWNSHIP: 38
+MAIN NUMBER: 3H-8998
+BOTTOM TEXT (OCR): MITSUBISHI RVR
+CAR MODEL (MATCHED): MITSUBISHI RVR
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3H-8998
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:01:40
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000140_534.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): BYD YANG KANG U8
+CAR MODEL (MATCHED): BYD YANG WANG U8
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:01:46
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000146_134.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: RLG-9658
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-9658
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:01:50
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000150_573.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: RLG-6894
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-6894
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:02:00
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000200_074.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): SUZUKI ERTIGA
+CAR MODEL (MATCHED): SUZUKI ERTIGA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:03:37
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000337_621.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): BYD YANG KANG U8
+CAR MODEL (MATCHED): BYD YANG WANG U8
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:04:46
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000446_843.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: CD 32-6
+BOTTOM TEXT (OCR): BYD YANG KANG U8
+CAR MODEL (MATCHED): BYD YANG WANG U8
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 32-6
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:04:52
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000452_364.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: RLG-9658
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-9658
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:06:26
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000626_513.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 13S-89781
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 13S-89781
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:06:34
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000634_483.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: CD 32-6
+BOTTOM TEXT (OCR): BYD YANG KANG U8
+CAR MODEL (MATCHED): BYD YANG WANG U8
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 32-6
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:06:42
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000642_593.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): NISSAN CLIPPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2K-4389
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:06:50
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000650_736.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAW VOLKSWAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:07:00
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000700_363.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 67P-5844
+BOTTOM TEXT (OCR): SUZUKI ERTIGA
+CAR MODEL (MATCHED): SUZUKI ERTIGA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 67P-5844
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:07:06
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000706_654.jpg
+REGION: YGN
+TOWNSHIP: 19
+MAIN NUMBER: 6Q-6555
+BOTTOM TEXT (OCR): MERCEDES BENZ
+CAR MODEL (MATCHED): MERCEDES-BENZ
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6Q-6555
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:07:12
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000712_679.jpg
+REGION: NPW
+TOWNSHIP: 7
+MAIN NUMBER: 76R-1119
+BOTTOM TEXT (OCR): CHEVROLET MALIBU
+CAR MODEL (MATCHED): CHEVROLET MALIBU
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 76R-1119
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:07:18
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000718_166.jpg
+REGION: YGN
+TOWNSHIP: 40
+MAIN NUMBER: 4Q-8429
+BOTTOM TEXT (OCR): SUZUKI SWIFT
+CAR MODEL (MATCHED): SUZUKI SWIFT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 4Q-8429
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:07:25
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000725_153.jpg
+REGION: BGO
+TOWNSHIP: 18
+MAIN NUMBER: 89S-1308
+BOTTOM TEXT (OCR): DONGFENG VENUCIA VX6
+CAR MODEL (MATCHED): DONGFENG VENUCIA VX6
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 89S-1308
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:07:30
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000730_422.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 4E-7936
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 4E-7936
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:07:36
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000736_002.jpg
+REGION: YGN
+TOWNSHIP: 22
+MAIN NUMBER: 8J-6900
+BOTTOM TEXT (OCR): I ZOME
+CAR MODEL (MATCHED): I ZOME
+COLOR: blue
+VEHICLE TYPE: Touring Vehicle
+DISPLAY: 8J-6900
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:07:44
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000744_916.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): CRETAELEY WOLIRU
+CAR MODEL (MATCHED): CRETAELEY WOLIRU
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:07:53
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000753_859.jpg
+REGION: YGN
+TOWNSHIP: 36
+MAIN NUMBER: 69N-6612
+BOTTOM TEXT (OCR): TONOTA COROLLA FIELDER
+CAR MODEL (MATCHED): TOYOTA COROLLA FIELDER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 69N-6612
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:07:58
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000758_653.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: RLG-6894
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-6894
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:08:04
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000804_550.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: RLG-7344
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-7344
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:08:10
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000810_463.jpg
+REGION: YGN
+TOWNSHIP: 43
+MAIN NUMBER: 9H-5896
+BOTTOM TEXT (OCR): TOYOTAPROB09
+CAR MODEL (MATCHED): TOYOTA PROBOX
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9H-5896
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:08:16
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000816_705.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 42F-5191
+BOTTOM TEXT (OCR): SUZUNI CARRY
+CAR MODEL (MATCHED): SUZUNI CARRY
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 42F-5191
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:08:22
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000822_024.jpg
+REGION: MDY
+TOWNSHIP: 1
+MAIN NUMBER: 6L-3915
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6L-3915
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:08:27
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000827_270.jpg
+REGION: MDY
+TOWNSHIP: 20
+MAIN NUMBER: 9M-1271
+BOTTOM TEXT (OCR): HONDA FIT
+CAR MODEL (MATCHED): HONDA FIT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9M-1271
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:08:32
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000831_992.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 5S-5575
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5S-5575
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:08:37
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000837_541.jpg
+REGION: YGN
+TOWNSHIP: 38
+MAIN NUMBER: 3H-8998
+BOTTOM TEXT (OCR): MITSUBISHI RVR
+CAR MODEL (MATCHED): MITSUBISHI RVR
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3H-8998
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:08:42
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000842_080.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 65Q-9267
+BOTTOM TEXT (OCR): SUZUKI SWIFT
+CAR MODEL (MATCHED): SUZUKI SWIFT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 65Q-9267
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:08:47
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000847_656.jpg
+REGION: NPW
+TOWNSHIP: 2
+MAIN NUMBER: 5P-6859
+BOTTOM TEXT (OCR): TO1O1A MEUL PT
+CAR MODEL (MATCHED): TO1O1A MEUL PT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5P-6859
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:08:52
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000852_735.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 4E-7936
+BOTTOM TEXT (OCR): MAR
+CAR MODEL (MATCHED): MAR
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 4E-7936
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:08:58
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_000858_383.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: RLG-9658
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-9658
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:10:19
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001019_865.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 3S-8978
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-8978
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:10:28
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001028_666.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): SUZUKI ERTIGA
+CAR MODEL (MATCHED): SUZUKI ERTIGA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:10:34
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001034_042.jpg
+REGION: NPW
+TOWNSHIP: 7
+MAIN NUMBER: 6R-1119
+BOTTOM TEXT (OCR): CHEVROLET MALIBU
+CAR MODEL (MATCHED): CHEVROLET MALIBU
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6R-1119
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:10:40
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001040_789.jpg
+REGION: BGO
+TOWNSHIP: 18
+MAIN NUMBER: 9S-1308
+BOTTOM TEXT (OCR): DONGFENG VENUCIA VX6
+CAR MODEL (MATCHED): DONGFENG VENUCIA VX6
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-1308
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:10:49
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001049_078.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: CD 32-6
+BOTTOM TEXT (OCR): BYD YANG KANG U8
+CAR MODEL (MATCHED): BYD YANG WANG U8
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 32-6
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:10:55
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001055_118.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 2F-5191
+BOTTOM TEXT (OCR): SUZUNI CARRY
+CAR MODEL (MATCHED): SUZUNI CARRY
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2F-5191
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:10:59
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001059_754.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 5Q-9267
+BOTTOM TEXT (OCR): SUZUKI SWIFT
+CAR MODEL (MATCHED): SUZUKI SWIFT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5Q-9267
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:11:04
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001104_825.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: RLG-9658
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-9658
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:12:04
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001204_965.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 3S-8978
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-8978
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:12:12
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001212_891.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: CD 32-6
+BOTTOM TEXT (OCR): BYD YANG KANG U8
+CAR MODEL (MATCHED): BYD YANG WANG U8
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 32-6
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:12:21
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001221_043.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): NISSAN CLIPPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2K-4389
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:12:29
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001229_094.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAW VOLKSWAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:12:38
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001238_440.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): SUZUKI ERTIGA
+CAR MODEL (MATCHED): SUZUKI ERTIGA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:12:44
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001244_491.jpg
+REGION: YGN
+TOWNSHIP: 19
+MAIN NUMBER: 6Q-6555
+BOTTOM TEXT (OCR): MERCEDES BENZ
+CAR MODEL (MATCHED): MERCEDES-BENZ
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6Q-6555
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:12:50
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001250_021.jpg
+REGION: NPW
+TOWNSHIP: 7
+MAIN NUMBER: 6R-1119
+BOTTOM TEXT (OCR): CHEVROLET MALIBU
+CAR MODEL (MATCHED): CHEVROLET MALIBU
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6R-1119
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:12:55
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001255_209.jpg
+REGION: YGN
+TOWNSHIP: 40
+MAIN NUMBER: 4Q-8429
+BOTTOM TEXT (OCR): SUZUKI SWIFT
+CAR MODEL (MATCHED): SUZUKI SWIFT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 4Q-8429
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:13:02
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001302_049.jpg
+REGION: BGO
+TOWNSHIP: 18
+MAIN NUMBER: 9S-1308
+BOTTOM TEXT (OCR): DONGFENG VENUCIA VX6
+CAR MODEL (MATCHED): DONGFENG VENUCIA VX6
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-1308
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:13:07
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001307_125.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 4E-7936
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 4E-7936
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:13:12
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001312_573.jpg
+REGION: YGN
+TOWNSHIP: 22
+MAIN NUMBER: 8J-6900
+BOTTOM TEXT (OCR): I ZOME
+CAR MODEL (MATCHED): I ZOME
+COLOR: blue
+VEHICLE TYPE: Touring Vehicle
+DISPLAY: 8J-6900
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:13:20
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001320_836.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): CRETAELEY WOLIRU
+CAR MODEL (MATCHED): CRETAELEY WOLIRU
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:13:29
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001329_983.jpg
+REGION: YGN
+TOWNSHIP: 36
+MAIN NUMBER: 9N-6612
+BOTTOM TEXT (OCR): TONOTA COROLLA FIELDER
+CAR MODEL (MATCHED): TOYOTA COROLLA FIELDER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9N-6612
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:13:34
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001334_679.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: RLG-6894
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-6894
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:13:40
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001340_529.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: RLG-7344
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-7344
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:13:46
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001346_378.jpg
+REGION: YGN
+TOWNSHIP: 43
+MAIN NUMBER: 9H-5896
+BOTTOM TEXT (OCR): TOYOTAPROB09
+CAR MODEL (MATCHED): TOYOTA PROBOX
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9H-5896
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:13:52
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001352_531.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 2F-5191
+BOTTOM TEXT (OCR): SUZUNI CARRY
+CAR MODEL (MATCHED): SUZUNI CARRY
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2F-5191
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:13:57
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001357_709.jpg
+REGION: MDY
+TOWNSHIP: 1
+MAIN NUMBER: 6L-3915
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6L-3915
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:14:02
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001402_623.jpg
+REGION: MDY
+TOWNSHIP: 20
+MAIN NUMBER: 9M-1271
+BOTTOM TEXT (OCR): HONDA FIT
+CAR MODEL (MATCHED): HONDA FIT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9M-1271
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:14:07
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001407_219.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 5S-5575
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5S-5575
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:14:12
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001412_744.jpg
+REGION: YGN
+TOWNSHIP: 38
+MAIN NUMBER: 3H-8998
+BOTTOM TEXT (OCR): MITSUBISHI RVR
+CAR MODEL (MATCHED): MITSUBISHI RVR
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3H-8998
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:14:17
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001417_237.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 5Q-9267
+BOTTOM TEXT (OCR): SUZUKI SWIFT
+CAR MODEL (MATCHED): SUZUKI SWIFT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5Q-9267
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:14:22
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001422_721.jpg
+REGION: NPW
+TOWNSHIP: 2
+MAIN NUMBER: 5P-6859
+BOTTOM TEXT (OCR): TO1O1A MEUL PT
+CAR MODEL (MATCHED): TO1O1A MEUL PT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5P-6859
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:14:27
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001427_726.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 4E-7936
+BOTTOM TEXT (OCR): MAR
+CAR MODEL (MATCHED): MAR
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 4E-7936
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:14:33
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001433_241.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: RLG-9658
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-9658
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:19:06
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001906_865.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): CRETAELEY WOLIRU
+CAR MODEL (MATCHED): CRETAELEY WOLIRU
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:19:17
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001917_896.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: CD 5-5
+BOTTOM TEXT (OCR): OPTIMA
+CAR MODEL (MATCHED): KIA OPTIMA
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 5-5
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:19:26
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001926_205.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: CD 32-6
+BOTTOM TEXT (OCR): BYD YANG KANG U8
+CAR MODEL (MATCHED): BYD YANG WANG U8
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 32-6
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:19:31
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_001931_411.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: RLG-9658
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-9658
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:22:10
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002210_000.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6R-1119
+BOTTOM TEXT (OCR): CHEEOOLEY MALIRU
+CAR MODEL (MATCHED): CHEEOOLEY MALIRU
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6R-1119
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:22:14
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002214_633.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 3S-8978
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-8978
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:22:22
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002222_721.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: CD 32-6
+BOTTOM TEXT (OCR): YANG XANG UB BYD
+CAR MODEL (MATCHED): YANG XANG UB BYD
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 32-6
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:22:34
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002233_990.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: CD 5-5
+BOTTOM TEXT (OCR): OPTIMA
+CAR MODEL (MATCHED): KIA OPTIMA
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 5-5
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:22:38
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002238_924.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: RLG-9658
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-9658
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:23:36
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002336_691.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 3S-8978
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-8978
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:23:44
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002344_739.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: CD 32-6
+BOTTOM TEXT (OCR): YANG XANG UB BYD
+CAR MODEL (MATCHED): YANG XANG UB BYD
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 32-6
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:23:52
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002352_440.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): NISSAN CLIPPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2K-4389
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:24:00
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002400_137.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAW VOLKSWAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:24:09
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002409_109.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): SUZUKI ERTIGA
+CAR MODEL (MATCHED): SUZUKI ERTIGA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:24:15
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002415_087.jpg
+REGION: YGN
+TOWNSHIP: 19
+MAIN NUMBER: 6Q-6555
+BOTTOM TEXT (OCR): MERCEDES BENZ
+CAR MODEL (MATCHED): MERCEDES-BENZ
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6Q-6555
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:24:20
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002420_562.jpg
+REGION: NPW
+TOWNSHIP: 7
+MAIN NUMBER: 6R-1119
+BOTTOM TEXT (OCR): CHEVROLET MALIBU
+CAR MODEL (MATCHED): CHEVROLET MALIBU
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6R-1119
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:24:25
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002425_724.jpg
+REGION: YGN
+TOWNSHIP: 40
+MAIN NUMBER: 4Q-8429
+BOTTOM TEXT (OCR): SUZUKI SWIFT
+CAR MODEL (MATCHED): SUZUKI SWIFT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 4Q-8429
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:24:32
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002432_312.jpg
+REGION: BGO
+TOWNSHIP: 18
+MAIN NUMBER: 9S-1308
+BOTTOM TEXT (OCR): DONGFENG VENUCIA
+CAR MODEL (MATCHED): DONGFENG VENUCIA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-1308
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:24:37
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002437_249.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 4E-7936
+BOTTOM TEXT (OCR): TOVOTA PROOOE
+CAR MODEL (MATCHED): TOVOTA PROOOE
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 4E-7936
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:24:42
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002442_534.jpg
+REGION: YGN
+TOWNSHIP: 22
+MAIN NUMBER: 8J-6900
+BOTTOM TEXT (OCR): I ZOME
+CAR MODEL (MATCHED): I ZOME
+COLOR: blue
+VEHICLE TYPE: Touring Vehicle
+DISPLAY: 8J-6900
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:24:50
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002450_466.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6R-1119
+BOTTOM TEXT (OCR): CHEEOOLEY MALIRU
+CAR MODEL (MATCHED): CHEEOOLEY MALIRU
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6R-1119
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:24:59
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002459_176.jpg
+REGION: YGN
+TOWNSHIP: 36
+MAIN NUMBER: 9N-6612
+BOTTOM TEXT (OCR): TONOTA COROLLA FIELDER
+CAR MODEL (MATCHED): TOYOTA COROLLA FIELDER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9N-6612
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:25:03
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002503_968.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: RLG-6894
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-6894
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:25:09
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002509_678.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: RLG-7344
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-7344
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:25:15
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002515_416.jpg
+REGION: YGN
+TOWNSHIP: 43
+MAIN NUMBER: 9H-5896
+BOTTOM TEXT (OCR): TOYOTA PROBOS
+CAR MODEL (MATCHED): TOYOTA PROBOX
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9H-5896
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:25:21
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002521_531.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 2F-5191
+BOTTOM TEXT (OCR): SUZUKI CARRY
+CAR MODEL (MATCHED): SUZUKI CARRY
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2F-5191
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:25:26
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002526_953.jpg
+REGION: MDY
+TOWNSHIP: 1
+MAIN NUMBER: 6L-3915
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6L-3915
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:25:32
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002532_187.jpg
+REGION: MDY
+TOWNSHIP: 20
+MAIN NUMBER: 9M-1271
+BOTTOM TEXT (OCR): HOMDA FIT
+CAR MODEL (MATCHED): HOMDA FIT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9M-1271
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:25:36
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002536_675.jpg
+REGION: MDY
+TOWNSHIP: 16
+MAIN NUMBER: 5S-5575
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5S-5575
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:25:42
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002542_178.jpg
+REGION: YGN
+TOWNSHIP: 38
+MAIN NUMBER: 3H-8998
+BOTTOM TEXT (OCR): MITSUBISHI RVR
+CAR MODEL (MATCHED): MITSUBISHI RVR
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3H-8998
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:25:46
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002546_809.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 5Q-9267
+BOTTOM TEXT (OCR): SUZUKI SWIFT
+CAR MODEL (MATCHED): SUZUKI SWIFT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5Q-9267
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:25:52
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002552_353.jpg
+REGION: NPW
+TOWNSHIP: 2
+MAIN NUMBER: 5P-6859
+BOTTOM TEXT (OCR): TOVOTA WTLU PESTD
+CAR MODEL (MATCHED): TOVOTA WTLU PESTD
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5P-6859
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:25:57
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002557_358.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 4E-7936
+BOTTOM TEXT (OCR): TOVOTA PROOSE
+CAR MODEL (MATCHED): TOVOTA PROOSE
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 4E-7936
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:26:08
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002608_882.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: CD 5-5
+BOTTOM TEXT (OCR): OPTIMA
+CAR MODEL (MATCHED): KIA OPTIMA
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 5-5
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:26:13
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_002613_839.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: RLG-9658
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-9658
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:36:10
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003610_069.jpg
+REGION: NPW
+TOWNSHIP: 7
+MAIN NUMBER: 6R-1119
+BOTTOM TEXT (OCR): CHEVROLET MALIBU
+CAR MODEL (MATCHED): CHEVROLET MALIBU
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6R-1119
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:36:15
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003615_210.jpg
+REGION: MDY
+TOWNSHIP: 1
+MAIN NUMBER: 6L-3915
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6L-3915
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:36:20
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003620_575.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 3S-8978
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-8978
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:36:25
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003625_838.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 4E-7936
+BOTTOM TEXT (OCR): TOVOTA PROOOE
+CAR MODEL (MATCHED): TOVOTA PROOOE
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 4E-7936
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:36:34
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003634_332.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAW VOLKSWAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:36:44
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003644_063.jpg
+REGION: YGN
+TOWNSHIP: 36
+MAIN NUMBER: 9N-6612
+BOTTOM TEXT (OCR): TONOTA COROLLA FIELDER
+CAR MODEL (MATCHED): TOYOTA COROLLA FIELDER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9N-6612
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:36:52
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003652_782.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6R-1119
+BOTTOM TEXT (OCR): CHEEOOLEY MALIRU
+CAR MODEL (MATCHED): CHEEOOLEY MALIRU
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6R-1119
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:36:57
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003657_944.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: RLG-6894
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-6894
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:37:05
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003705_030.jpg
+REGION: BGO
+TOWNSHIP: 18
+MAIN NUMBER: 9S-1308
+BOTTOM TEXT (OCR): DONGFENG VENUCIA
+CAR MODEL (MATCHED): DONGFENG VENUCIA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-1308
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:37:14
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003714_538.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): SUZUKI ERTIGA
+CAR MODEL (MATCHED): SUZUKI ERTIGA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:37:27
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003726_976.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: CD 5-5
+BOTTOM TEXT (OCR): OPTIMA
+CAR MODEL (MATCHED): KIA OPTIMA
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 5-5
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:37:33
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003733_155.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 2F-5191
+BOTTOM TEXT (OCR): SUZUKI CARRY
+CAR MODEL (MATCHED): SUZUKI CARRY
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2F-5191
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:37:37
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003737_884.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 5Q-9267
+BOTTOM TEXT (OCR): SUZUKI SWIFT
+CAR MODEL (MATCHED): SUZUKI SWIFT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5Q-9267
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:37:46
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003746_187.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): NISSAN CLIPPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2K-4389
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:37:52
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003752_387.jpg
+REGION: YGN
+TOWNSHIP: 22
+MAIN NUMBER: 8J-6900
+BOTTOM TEXT (OCR): I ZOME
+CAR MODEL (MATCHED): I ZOME
+COLOR: blue
+VEHICLE TYPE: Touring Vehicle
+DISPLAY: 8J-6900
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:37:58
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003758_693.jpg
+REGION: NPW
+TOWNSHIP: 2
+MAIN NUMBER: 5P-6859
+BOTTOM TEXT (OCR): TOVOTA WTLU PESTD
+CAR MODEL (MATCHED): TOVOTA WTLU PESTD
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5P-6859
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:38:04
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003804_310.jpg
+REGION: YGN
+TOWNSHIP: 38
+MAIN NUMBER: 3H-8998
+BOTTOM TEXT (OCR): MITSUBISHI RVR
+CAR MODEL (MATCHED): MITSUBISHI RVR
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3H-8998
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:38:09
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003809_725.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 4E-7936
+BOTTOM TEXT (OCR): TOVOTA PROOSE
+CAR MODEL (MATCHED): TOVOTA PROOSE
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 4E-7936
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:38:15
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003815_322.jpg
+REGION: YGN
+TOWNSHIP: 43
+MAIN NUMBER: 9H-5896
+BOTTOM TEXT (OCR): TOYOTA PROBOS
+CAR MODEL (MATCHED): TOYOTA PROBOX
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9H-5896
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:38:21
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003821_105.jpg
+REGION: YGN
+TOWNSHIP: 19
+MAIN NUMBER: 6Q-6555
+BOTTOM TEXT (OCR): MERCEDES BENZ
+CAR MODEL (MATCHED): MERCEDES-BENZ
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6Q-6555
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:38:26
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003826_420.jpg
+REGION: YGN
+TOWNSHIP: 40
+MAIN NUMBER: 4Q-8429
+BOTTOM TEXT (OCR): SUZUKI SWIFT
+CAR MODEL (MATCHED): SUZUKI SWIFT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 4Q-8429
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:38:32
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003832_671.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: RLG-7344
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-7344
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:38:37
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003837_583.jpg
+REGION: MDY
+TOWNSHIP: 16
+MAIN NUMBER: 5S-5575
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5S-5575
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:38:42
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003842_550.jpg
+REGION: MDY
+TOWNSHIP: -
+MAIN NUMBER: RLG-9658
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: yellow
+VEHICLE TYPE: Religious
+DISPLAY: RLG-9658
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:38:50
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003850_874.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: CD 32-6
+BOTTOM TEXT (OCR): YANG XANG UB BYD
+CAR MODEL (MATCHED): YANG XANG UB BYD
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 32-6
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:38:56
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_003856_162.jpg
+REGION: MDY
+TOWNSHIP: 20
+MAIN NUMBER: 9M-1271
+BOTTOM TEXT (OCR): HOMDA FIT
+CAR MODEL (MATCHED): HOMDA FIT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9M-1271
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:56:12
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_005612_683.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): NISSAN CLIPPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2K-4389
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:56:17
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_005617_613.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 3S-8978
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-8978
+============================================================
+
+============================================================
+TIME: 2026-06-05 00:56:36
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_005636_459.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: CD 5-5
+BOTTOM TEXT (OCR): OPTIMA
+CAR MODEL (MATCHED): KIA OPTIMA
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 5-5
+============================================================
+
+============================================================
+TIME: 2026-06-05 01:14:38
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_011438_352.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): NISSAN CLIPPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2K-4389
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 01:14:43
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_011443_576.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 3S-8978
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-8978
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-05 02:40:01
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_024001_314.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): NISSAN CLIPPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2K-4389
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 02:42:05
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_024205_416.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): NISSAN CLIPPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2K-4389
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 02:43:26
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_024326_354.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): NISSAN CLIPPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2K-4389
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 02:43:33
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_024333_886.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 3S-8978
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-8978
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-05 03:03:28
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_030328_596.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): NISSAN CLIPPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2K-4389
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 09:05:24
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_090524_389.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+STATUS: Fail
+MISSING FIELDS: number, region, township, type, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 09:05:37
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_090537_662.jpg
+REGION: YGN
+TOWNSHIP: 20
+MAIN NUMBER: CD 32-6
+BOTTOM TEXT (OCR): BYO TANG RANG UB
+CAR MODEL (MATCHED): BYO TANG RANG UB
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 32-6
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 09:53:36
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_095336_780.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 7Q-8284
+BOTTOM TEXT (OCR): SROIRE ERETLR
+CAR MODEL (MATCHED): SROIRE ERETLR
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7Q-8284
+STATUS: Fail
+MISSING FIELDS: region, township
+============================================================
+
+============================================================
+TIME: 2026-06-05 10:33:19
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_103319_439.jpg
+REGION: YGN
+TOWNSHIP: 45
+MAIN NUMBER: 3E-6690
+BOTTOM TEXT (OCR): NISSAN XTRAIL
+CAR MODEL (MATCHED): NISSAN X-TRAIL
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3E-6690
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 10:53:51
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_105351_665.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6I-9222
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6I-9222
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 10:57:44
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_105744_480.jpg
+REGION: MDY
+TOWNSHIP: 16
+MAIN NUMBER: 5S-5575
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5S-5575
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-05 11:03:08
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_110308_114.jpg
+REGION: MDY
+TOWNSHIP: 16
+MAIN NUMBER: 5S-5575
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5S-5575
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-05 11:10:21
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_111021_658.jpg
+REGION: MDY
+TOWNSHIP: 16
+MAIN NUMBER: 5S-5575
+BOTTOM TEXT (OCR): NNEAI
+CAR MODEL (MATCHED): NNEAI
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5S-5575
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 11:10:26
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_111026_199.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 9Q-2355
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9Q-2355
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 11:10:31
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_111031_449.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 1Q-7198
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1Q-7198
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 11:13:37
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_111337_104.jpg
+REGION: MDY
+TOWNSHIP: 16
+MAIN NUMBER: 5S-5575
+BOTTOM TEXT (OCR): BETA U PRO EV
+CAR MODEL (MATCHED): BETA U PRO EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5S-5575
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 11:13:44
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_111344_431.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 9Q-2355
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9Q-2355
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-05 11:13:52
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_111352_806.jpg
+REGION: AYY
+TOWNSHIP: 24
+MAIN NUMBER: 1Q-7198
+BOTTOM TEXT (OCR): TOTOTA DAODOT
+CAR MODEL (MATCHED): TOTOTA DAODOT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1Q-7198
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 11:57:12
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_115712_770.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): STI DITLE
+CAR MODEL (MATCHED): STI DITLE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 11:57:24
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_115724_638.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAN VOLKSWAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 12:53:12
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_125312_861.jpg
+REGION: NPW
+TOWNSHIP: 2
+MAIN NUMBER: 5P-6859
+BOTTOM TEXT (OCR): TOYOTA WELU PESTE
+CAR MODEL (MATCHED): TOYOTA WELU PESTE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5P-6859
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:09:23
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_130923_890.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 8C-1262
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 8C-1262
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:09:29
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_130929_180.jpg
+REGION: YGN
+TOWNSHIP: 36
+MAIN NUMBER: 2Q-3787
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2Q-3787
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:09:35
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_130935_061.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 3R-7610
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3R-7610
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:09:39
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_130939_922.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 1Q-9566
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1Q-9566
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:09:56
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_130956_595.jpg
+REGION: YGN
+TOWNSHIP: 16
+MAIN NUMBER: 3H-6090
+BOTTOM TEXT (OCR): TOTOTA ALPRARD
+CAR MODEL (MATCHED): TOYOTA ALPHARD
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3H-6090
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:10:06
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_131006_716.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 8C-1267
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 8C-1267
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:10:11
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_131011_866.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 2F-5879
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2F-5879
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:11:42
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_131142_642.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 1Q-9566
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1Q-9566
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:17:13
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_131713_533.jpg
+REGION: YGN
+TOWNSHIP: 11
+MAIN NUMBER: AA-3375
+BOTTOM TEXT (OCR): NISSAN AD
+CAR MODEL (MATCHED): NISSAN AD VAN
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: AA-3375
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:23:42
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_132342_022.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 1Q-9566
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1Q-9566
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:23:52
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_132352_883.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 8C-1262
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 8C-1262
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:24:03
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_132403_677.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 3R-7610
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3R-7610
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:24:13
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_132413_725.jpg
+REGION: YGN
+TOWNSHIP: 36
+MAIN NUMBER: 2Q-3787
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2Q-3787
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:24:23
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_132423_445.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 2F-5879
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2F-5879
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 13:24:29
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_132429_103.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: BC-1262
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: BC-1262
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 14:02:09
+FILE: D:\kosithu\kosithu\v126_plate_captures/plate_20260605_140209_089.jpg
+REGION: YGN
+TOWNSHIP: 11
+MAIN NUMBER: AA-3375
+BOTTOM TEXT (OCR): NISSAN AD
+CAR MODEL (MATCHED): NISSAN AD VAN
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: AA-3375
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 15:33:40
+FILE: D:\kosithu\MLPD\captures/plate_20260605_153340_909.jpg
+REGION: MDY
+TOWNSHIP: 12
+MAIN NUMBER: 3S-7970
+BOTTOM TEXT (OCR): FAN BESTUNE
+CAR MODEL (MATCHED): FAN BESTUNE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-7970
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 15:41:47
+FILE: D:\kosithu\MLPD\captures/plate_20260605_154147_001.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 4R-5463
+BOTTOM TEXT (OCR): JETNRM
+CAR MODEL (MATCHED): JETNRM
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 4R-5463
+STATUS: Fail
+MISSING FIELDS: region, township
+============================================================
+
+============================================================
+TIME: 2026-06-05 15:44:12
+FILE: D:\kosithu\MLPD\captures/plate_20260605_154412_253.jpg
+REGION: MDY
+TOWNSHIP: 16
+MAIN NUMBER: 5S-5575
+BOTTOM TEXT (OCR): BETA U PRO EV
+CAR MODEL (MATCHED): NETA U PRO EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5S-5575
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 15:44:16
+FILE: D:\kosithu\MLPD\captures/plate_20260605_154416_059.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 9Q-2355
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9Q-2355
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-05 15:44:20
+FILE: D:\kosithu\MLPD\captures/plate_20260605_154420_536.jpg
+REGION: AYY
+TOWNSHIP: 24
+MAIN NUMBER: 1Q-7198
+BOTTOM TEXT (OCR): TOTOTA DAODOT
+CAR MODEL (MATCHED): TOTOTA DAODOT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1Q-7198
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 15:50:43
+FILE: D:\kosithu\MLPD\captures/plate_20260605_155043_212.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): STI DITLE
+CAR MODEL (MATCHED): STI DITLE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 15:50:49
+FILE: D:\kosithu\MLPD\captures/plate_20260605_155049_218.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAN VOLKSWAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 15:54:40
+FILE: D:\kosithu\MLPD\captures/plate_20260605_155440_538.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): STI DITLE
+CAR MODEL (MATCHED): STI DITLE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 15:54:46
+FILE: D:\kosithu\MLPD\captures/plate_20260605_155446_839.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAN VOLKSWAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:07:37
+FILE: D:\kosithu\MLPD\captures/plate_20260605_160737_479.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): STI DITLE
+CAR MODEL (MATCHED): STI DITLE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:07:43
+FILE: D:\kosithu\MLPD\captures/plate_20260605_160743_840.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAN VOLKSWAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:08:24
+FILE: D:\kosithu\MLPD\captures/plate_20260605_160824_753.jpg
+REGION: MDY
+TOWNSHIP: 16
+MAIN NUMBER: 5S-5575
+BOTTOM TEXT (OCR): BETA U PRO EV
+CAR MODEL (MATCHED): NETA U PRO EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5S-5575
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:08:28
+FILE: D:\kosithu\MLPD\captures/plate_20260605_160828_427.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 9Q-2355
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9Q-2355
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:08:32
+FILE: D:\kosithu\MLPD\captures/plate_20260605_160832_963.jpg
+REGION: AYY
+TOWNSHIP: 24
+MAIN NUMBER: 1Q-7198
+BOTTOM TEXT (OCR): TOTOTA DAODOT
+CAR MODEL (MATCHED): TOTOTA DAODOT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1Q-7198
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:10:18
+FILE: D:\kosithu\MLPD\captures/plate_20260605_161018_737.jpg
+REGION: YGN
+TOWNSHIP: 11
+MAIN NUMBER: AA-3375
+BOTTOM TEXT (OCR): NISSAN AD
+CAR MODEL (MATCHED): NISSAN AD VAN
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: AA-3375
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:10:45
+FILE: D:\kosithu\MLPD\captures/plate_20260605_161044_998.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): STI DITLE
+CAR MODEL (MATCHED): STI DITLE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:10:50
+FILE: D:\kosithu\MLPD\captures/plate_20260605_161050_524.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAN VOLKSWAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:12:19
+FILE: D:\kosithu\MLPD\captures/plate_20260605_161219_651.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+STATUS: Fail
+MISSING FIELDS: number, region, township, type, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:12:23
+FILE: D:\kosithu\MLPD\captures/plate_20260605_161223_931.jpg
+REGION: YGN
+TOWNSHIP: 13
+MAIN NUMBER: 9D-1064
+BOTTOM TEXT (OCR): MAZDA DEMIO
+CAR MODEL (MATCHED): MAZDA DEMIO
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9D-1064
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:13:04
+FILE: D:\kosithu\MLPD\captures/plate_20260605_161304_266.jpg
+REGION: SHN
+TOWNSHIP: 2
+MAIN NUMBER: 2R-9890
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2R-9890
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:28:16
+FILE: D:\kosithu\MLPD\captures/plate_20260605_162816_174.jpg
+REGION: MDY
+TOWNSHIP: 16
+MAIN NUMBER: 5S-5575
+BOTTOM TEXT (OCR): NNEAI
+CAR MODEL (MATCHED): NNEAI
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5S-5575
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:28:20
+FILE: D:\kosithu\MLPD\captures/plate_20260605_162820_130.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 9Q-2355
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9Q-2355
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 16:28:24
+FILE: D:\kosithu\MLPD\captures/plate_20260605_162824_538.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 1Q-7198
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1Q-7198
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-05 19:39:34
+FILE: D:\kosithu\MLPD\captures/plate_20260605_193934_566.jpg
+REGION: MDY
+TOWNSHIP: 12
+MAIN NUMBER: 3S-7970
+BOTTOM TEXT (OCR): FAN BESTUNE
+CAR MODEL (MATCHED): FAN BESTUNE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-7970
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 19:45:34
+FILE: D:\kosithu\MLPD\captures/plate_20260605_194534_262.jpg
+REGION: YGN
+TOWNSHIP: 22
+MAIN NUMBER: 7F-4879
+BOTTOM TEXT (OCR): TURTTA CRINE
+CAR MODEL (MATCHED): TURTTA CRINE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7F-4879
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-05 19:49:33
+FILE: D:\kosithu\MLPD\captures/plate_20260605_194933_907.jpg
+REGION: YGN
+TOWNSHIP: 22
+MAIN NUMBER: 5D-8766
+BOTTOM TEXT (OCR): TOYOTA CALDIMA
+CAR MODEL (MATCHED): TOYOTA COROLLA CALDINA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5D-8766
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-07 19:44:19
+FILE: D:\kosithu\MLPD\captures/plate_20260607_194419_430.jpg
+REGION: MDY
+TOWNSHIP: 16
+MAIN NUMBER: 5S-5575
+BOTTOM TEXT (OCR): NNEAI
+CAR MODEL (MATCHED): NNEAI
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5S-5575
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-07 19:44:22
+FILE: D:\kosithu\MLPD\captures/plate_20260607_194422_782.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 9Q-2355
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9Q-2355
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-07 19:44:26
+FILE: D:\kosithu\MLPD\captures/plate_20260607_194426_563.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 1Q-7198
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1Q-7198
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 08:49:52
+FILE: D:\kosithu\MLPD\captures/plate_20260608_084952_282.jpg
+REGION: YGN
+TOWNSHIP: 42
+MAIN NUMBER: 6S-8624
+BOTTOM TEXT (OCR): KZA SPORTAGE
+CAR MODEL (MATCHED): KZA SPORTAGE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6S-8624
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 08:49:55
+FILE: D:\kosithu\MLPD\captures/plate_20260608_084955_008.jpg
+REGION: YGN
+TOWNSHIP: 10
+MAIN NUMBER: 3Q-3364
+BOTTOM TEXT (OCR): SUZUKI ERTIGA
+CAR MODEL (MATCHED): SUZUKI ERTIGA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3Q-3364
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 08:49:57
+FILE: D:\kosithu\MLPD\captures/plate_20260608_084957_768.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9R-5543
+BOTTOM TEXT (OCR): CHEYROLET SPARK
+CAR MODEL (MATCHED): CHEYROLET SPARK
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9R-5543
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 08:54:13
+FILE: D:\kosithu\MLPD\captures/plate_20260608_085413_689.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): STI DITLE
+CAR MODEL (MATCHED): STI DITLE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 08:54:17
+FILE: D:\kosithu\MLPD\captures/plate_20260608_085417_151.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAN VOLKSWAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 09:03:14
+FILE: D:\kosithu\MLPD\captures/plate_20260608_090314_534.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 2J-5536
+BOTTOM TEXT (OCR): STONOTA LAMNOUTIED
+CAR MODEL (MATCHED): STONOTA LAMNOUTIED
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2J-5536
+STATUS: Fail
+MISSING FIELDS: region, township
+============================================================
+
+============================================================
+TIME: 2026-06-08 09:03:18
+FILE: D:\kosithu\MLPD\captures/plate_20260608_090318_807.jpg
+REGION: SHN
+TOWNSHIP: 38
+MAIN NUMBER: EE-2760
+BOTTOM TEXT (OCR): NISSAN AD
+CAR MODEL (MATCHED): NISSAN AD VAN
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: EE-2760
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 09:04:19
+FILE: D:\kosithu\MLPD\captures/plate_20260608_090419_326.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6F-7676
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 6F-7676
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 09:04:25
+FILE: D:\kosithu\MLPD\captures/plate_20260608_090425_580.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6F-7676
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 6F-7676
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 09:04:34
+FILE: D:\kosithu\MLPD\captures/plate_20260608_090433_995.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6F-7676
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 6F-7676
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 09:04:46
+FILE: D:\kosithu\MLPD\captures/plate_20260608_090446_902.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6F-7676
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 6F-7676
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 09:05:59
+FILE: D:\kosithu\MLPD\captures/plate_20260608_090559_444.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6F-7676
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 6F-7676
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 09:11:40
+FILE: D:\kosithu\MLPD\captures/plate_20260608_091140_203.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: FF-2484
+BOTTOM TEXT (OCR): TOF0TA COROLLA FIELDER
+CAR MODEL (MATCHED): TOF0TA COROLLA FIELDER
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: FF-2484
+STATUS: Fail
+MISSING FIELDS: region, township
+============================================================
+
+============================================================
+TIME: 2026-06-08 09:32:38
+FILE: D:\kosithu\MLPD\captures/plate_20260608_093238_423.jpg
+REGION: MDY
+TOWNSHIP: 12
+MAIN NUMBER: 3S-7970
+BOTTOM TEXT (OCR): FAN BESTUNE
+CAR MODEL (MATCHED): FAN BESTUNE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-7970
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 09:34:51
+FILE: D:\kosithu\MLPD\captures/plate_20260608_093451_108.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 4E-7936
+BOTTOM TEXT (OCR): TONOTA PROSSE
+CAR MODEL (MATCHED): TONOTA PROSSE
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 4E-7936
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:01:07
+FILE: D:\kosithu\MLPD\captures/plate_20260608_100107_246.jpg
+REGION: YGN
+TOWNSHIP: 42
+MAIN NUMBER: 6S-8624
+BOTTOM TEXT (OCR): KZA SPORTAGE
+CAR MODEL (MATCHED): KZA SPORTAGE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6S-8624
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:01:10
+FILE: D:\kosithu\MLPD\captures/plate_20260608_100110_030.jpg
+REGION: YGN
+TOWNSHIP: 10
+MAIN NUMBER: 3Q-3364
+BOTTOM TEXT (OCR): SUZUKI ERTIGA
+CAR MODEL (MATCHED): SUZUKI ERTIGA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3Q-3364
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:01:12
+FILE: D:\kosithu\MLPD\captures/plate_20260608_100112_803.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9R-5543
+BOTTOM TEXT (OCR): CHEYROLET SPARK
+CAR MODEL (MATCHED): CHEYROLET SPARK
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9R-5543
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:16:26
+FILE: D:\kosithu\MLPD\captures/plate_20260608_101626_760.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: FF-2484
+BOTTOM TEXT (OCR): TOF0TA COROLLA FIELDER
+CAR MODEL (MATCHED): TOF0TA COROLLA FIELDER
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: FF-2484
+STATUS: Fail
+MISSING FIELDS: region, township
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:18:03
+FILE: D:\kosithu\MLPD\captures/plate_20260608_101803_495.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 2J-5536
+BOTTOM TEXT (OCR): STONOTA LAMNOUTIED
+CAR MODEL (MATCHED): STONOTA LAMNOUTIED
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2J-5536
+STATUS: Fail
+MISSING FIELDS: region, township
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:18:42
+FILE: D:\kosithu\MLPD\captures/plate_20260608_101842_442.jpg
+REGION: SHN
+TOWNSHIP: 38
+MAIN NUMBER: EE-2760
+BOTTOM TEXT (OCR): NISSAN AD
+CAR MODEL (MATCHED): NISSAN AD VAN
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: EE-2760
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:21:43
+FILE: D:\kosithu\MLPD\captures/plate_20260608_102143_105.jpg
+REGION: YGN
+TOWNSHIP: 42
+MAIN NUMBER: 6S-8624
+BOTTOM TEXT (OCR): KZA SPORTAGE
+CAR MODEL (MATCHED): KZA SPORTAGE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6S-8624
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:21:46
+FILE: D:\kosithu\MLPD\captures/plate_20260608_102146_345.jpg
+REGION: YGN
+TOWNSHIP: 10
+MAIN NUMBER: 3Q-3364
+BOTTOM TEXT (OCR): SUZUKI ERTIGA
+CAR MODEL (MATCHED): SUZUKI ERTIGA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3Q-3364
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:21:49
+FILE: D:\kosithu\MLPD\captures/plate_20260608_102149_722.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9R-5543
+BOTTOM TEXT (OCR): CHEYROLET SPARK
+CAR MODEL (MATCHED): CHEYROLET SPARK
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9R-5543
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:41:13
+FILE: D:\kosithu\MLPD\captures/plate_20260608_104113_147.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 1Q-9566
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1Q-9566
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:44:38
+FILE: D:\kosithu\MLPD\captures/plate_20260608_104438_539.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 8C-1262
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 8C-1262
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:44:43
+FILE: D:\kosithu\MLPD\captures/plate_20260608_104443_854.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 3R-7610
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3R-7610
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:44:48
+FILE: D:\kosithu\MLPD\captures/plate_20260608_104448_659.jpg
+REGION: YGN
+TOWNSHIP: 36
+MAIN NUMBER: 2Q-3787
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2Q-3787
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:44:53
+FILE: D:\kosithu\MLPD\captures/plate_20260608_104453_534.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 2F-5879
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2F-5879
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:50:26
+FILE: D:\kosithu\MLPD\captures/plate_20260608_105026_528.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 1Q-9566
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1Q-9566
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:50:33
+FILE: D:\kosithu\MLPD\captures/plate_20260608_105033_161.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 8C-1262
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 8C-1262
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:50:39
+FILE: D:\kosithu\MLPD\captures/plate_20260608_105039_964.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 3R-7610
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3R-7610
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:50:47
+FILE: D:\kosithu\MLPD\captures/plate_20260608_105047_149.jpg
+REGION: YGN
+TOWNSHIP: 36
+MAIN NUMBER: 2Q-3787
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2Q-3787
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:50:53
+FILE: D:\kosithu\MLPD\captures/plate_20260608_105053_146.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 2F-5879
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2F-5879
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:56:59
+FILE: D:\kosithu\MLPD\captures/plate_20260608_105659_866.jpg
+REGION: YGN
+TOWNSHIP: 42
+MAIN NUMBER: 6S-8624
+BOTTOM TEXT (OCR): KZA SPORTAGE
+CAR MODEL (MATCHED): KZA SPORTAGE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6S-8624
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:57:02
+FILE: D:\kosithu\MLPD\captures/plate_20260608_105702_749.jpg
+REGION: YGN
+TOWNSHIP: 10
+MAIN NUMBER: 3Q-3364
+BOTTOM TEXT (OCR): SUZUKI ERTIGA
+CAR MODEL (MATCHED): SUZUKI ERTIGA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3Q-3364
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 10:58:30
+FILE: D:\kosithu\MLPD\captures/plate_20260608_105830_604.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9R-5543
+BOTTOM TEXT (OCR): CHEYROLET SPARK
+CAR MODEL (MATCHED): CHEYROLET SPARK
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9R-5543
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 13:41:49
+FILE: D:\kosithu\MLPD\captures/plate_20260608_134149_162.jpg
+REGION: YGN
+TOWNSHIP: 43
+MAIN NUMBER: 2D-3805
+BOTTOM TEXT (OCR): TOYOTA CAMRY
+CAR MODEL (MATCHED): TOYOTA CAMRY
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2D-3805
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 13:42:04
+FILE: D:\kosithu\MLPD\captures/plate_20260608_134204_621.jpg
+REGION: YGN
+TOWNSHIP: 10
+MAIN NUMBER: 9E-1583
+BOTTOM TEXT (OCR): NERCEDES BENZ
+CAR MODEL (MATCHED): MERCEDES-BENZ
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9E-1583
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 13:47:17
+FILE: D:\kosithu\MLPD\captures/plate_20260608_134717_616.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: FF-2484
+BOTTOM TEXT (OCR): TOF0TA COROLLA FIELDER
+CAR MODEL (MATCHED): TOF0TA COROLLA FIELDER
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: FF-2484
+STATUS: Fail
+MISSING FIELDS: region, township
+============================================================
+
+============================================================
+TIME: 2026-06-08 14:44:43
+FILE: D:\kosithu\MLPD\captures/plate_20260608_144443_038.jpg
+REGION: YGN
+TOWNSHIP: 36
+MAIN NUMBER: 9N-6612
+BOTTOM TEXT (OCR): TONOTA COROLLA FIELDER
+CAR MODEL (MATCHED): TOYOTA COROLLA FIELDER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9N-6612
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:37:48
+FILE: D:\kosithu\MLPD\captures/plate_20260608_153748_655.jpg
+REGION: MDY
+TOWNSHIP: 20
+MAIN NUMBER: 9M-1271
+BOTTOM TEXT (OCR): HONDA RIT
+CAR MODEL (MATCHED): HONDA FIT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9M-1271
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:38:40
+FILE: D:\kosithu\MLPD\captures/plate_20260608_153840_938.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 2I-1995
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2I-1995
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:38:43
+FILE: D:\kosithu\MLPD\captures/plate_20260608_153843_221.jpg
+REGION: BGO
+TOWNSHIP: 2
+MAIN NUMBER: 9S-4133
+BOTTOM TEXT (OCR): VICTORY ZEBRA
+CAR MODEL (MATCHED): VICTORY ZEBRA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-4133
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:39:36
+FILE: D:\kosithu\MLPD\captures/plate_20260608_153936_757.jpg
+REGION: NPW
+TOWNSHIP: 7
+MAIN NUMBER: 6R-1119
+BOTTOM TEXT (OCR): CHEYROLET MALTHU
+CAR MODEL (MATCHED): CHEVROLET MALIBU
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6R-1119
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:39:57
+FILE: D:\kosithu\MLPD\captures/plate_20260608_153957_834.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6F-7676
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 6F-7676
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:40:23
+FILE: D:\kosithu\MLPD\captures/plate_20260608_154023_099.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6M-7341
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6M-7341
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:40:44
+FILE: D:\kosithu\MLPD\captures/plate_20260608_154044_023.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-5542
+BOTTOM TEXT (OCR): FAW VOLKSNAGEN ID4 EV
+CAR MODEL (MATCHED): FAW VOLKSWAGEN ID4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-5542
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:41:00
+FILE: D:\kosithu\MLPD\captures/plate_20260608_154100_601.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 9E-9527
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9E-9527
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:42:13
+FILE: D:\kosithu\MLPD\captures/plate_20260608_154213_482.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+STATUS: Fail
+MISSING FIELDS: number, region, township, type, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:42:15
+FILE: D:\kosithu\MLPD\captures/plate_20260608_154215_806.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: DD-9345
+BOTTOM TEXT (OCR): TOYOTA SUGGEED
+CAR MODEL (MATCHED): TOYOTA SUCCEED
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: DD-9345
+STATUS: Fail
+MISSING FIELDS: region, township
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:42:47
+FILE: D:\kosithu\MLPD\captures/plate_20260608_154247_292.jpg
+REGION: YGN
+TOWNSHIP: 22
+MAIN NUMBER: 1G-6657
+BOTTOM TEXT (OCR): SUZUKI SNIFT
+CAR MODEL (MATCHED): SUZUKI SWIFT
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1G-6657
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:48:48
+FILE: D:\kosithu\MLPD\captures/plate_20260608_154848_267.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 4R-1927
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 4R-1927
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:48:53
+FILE: D:\kosithu\MLPD\captures/plate_20260608_154853_737.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 5E-5569
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 5E-5569
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:48:59
+FILE: D:\kosithu\MLPD\captures/plate_20260608_154859_121.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 1D-2748
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1D-2748
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:49:01
+FILE: D:\kosithu\MLPD\captures/plate_20260608_154901_705.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6H-7342
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6H-7342
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 15:49:13
+FILE: D:\kosithu\MLPD\captures/plate_20260608_154913_496.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): TOTOTS CROMR
+CAR MODEL (MATCHED): TOTOTS CROMR
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+STATUS: Fail
+MISSING FIELDS: number, township, type
+============================================================
+
+============================================================
+TIME: 2026-06-08 16:16:28
+FILE: D:\kosithu\MLPD\captures/plate_20260608_161628_700.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 2I-3830
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2I-3830
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 16:16:30
+FILE: D:\kosithu\MLPD\captures/plate_20260608_161630_975.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 2I-9841
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2I-9841
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 16:16:34
+FILE: D:\kosithu\MLPD\captures/plate_20260608_161634_577.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 9H-6116
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9H-6116
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 16:16:37
+FILE: D:\kosithu\MLPD\captures/plate_20260608_161637_949.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 4K-9537
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 4K-9537
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 16:16:43
+FILE: D:\kosithu\MLPD\captures/plate_20260608_161643_196.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 4D-3695
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 4D-3695
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 16:16:46
+FILE: D:\kosithu\MLPD\captures/plate_20260608_161646_796.jpg
+REGION: BGO
+TOWNSHIP: 1
+MAIN NUMBER: 4L-9484
+BOTTOM TEXT (OCR): EOMIR CL
+CAR MODEL (MATCHED): EOMIR CL
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 4L-9484
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-08 16:16:49
+FILE: D:\kosithu\MLPD\captures/plate_20260608_161649_290.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 4F-1684
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 4F-1684
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 16:16:51
+FILE: D:\kosithu\MLPD\captures/plate_20260608_161651_891.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6J-8306
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6J-8306
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-08 16:16:59
+FILE: D:\kosithu\MLPD\captures/plate_20260608_161659_468.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+STATUS: Fail
+MISSING FIELDS: number, region, township, type, model
+============================================================

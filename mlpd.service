@@ -1,0 +1,15 @@
+[Unit]
+Description=MLPD Ubuntu Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ubuntu/MLPD_ubuntu
+Environment=PYTHONUNBUFFERED=1
+Environment=PORT=8000
+ExecStart=/home/ubuntu/MLPD_ubuntu/.venv/bin/python /home/ubuntu/MLPD_ubuntu/server_daemon.py --root /home/ubuntu/MLPD_ubuntu --port 8000 --stdout-log /home/ubuntu/MLPD_ubuntu/server.log --stderr-log /home/ubuntu/MLPD_ubuntu/server-error.log --pid-file /home/ubuntu/MLPD_ubuntu/server.pid
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
