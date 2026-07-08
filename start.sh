@@ -7,6 +7,7 @@ cd "$ROOT"
 PORT="${PORT:-8000}"
 HOST_URL="http://127.0.0.1:${PORT}"
 PUBLIC_HOST="${PUBLIC_HOST:-52.76.141.146}"
+READY_TIMEOUT="${READY_TIMEOUT:-300}"
 
 if command -v curl >/dev/null 2>&1; then
   if curl -fsS "${HOST_URL}/health" >/dev/null 2>&1; then
@@ -37,7 +38,7 @@ nohup .venv/bin/python server_daemon.py \
 echo "$!" > server-launcher.pid
 
 echo "Starting MLPD server in background..."
-for _ in $(seq 1 90); do
+for _ in $(seq 1 "$READY_TIMEOUT"); do
   if command -v curl >/dev/null 2>&1 && curl -fsS "${HOST_URL}/health" >/dev/null 2>&1; then
     echo "Server is running."
     echo "Local URL: ${HOST_URL}"
@@ -53,4 +54,8 @@ echo "Server did not become ready in time."
 echo "Check logs:"
 echo "  ./logs.sh"
 echo "  ./logs.sh -e"
+echo "--- recent server.log ---"
+if [[ -f "$ROOT/server.log" ]]; then tail -n 80 "$ROOT/server.log"; fi
+echo "--- recent server-error.log ---"
+if [[ -f "$ROOT/server-error.log" ]]; then tail -n 80 "$ROOT/server-error.log"; fi
 exit 1

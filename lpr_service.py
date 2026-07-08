@@ -19,6 +19,7 @@ DB_FILE = "mlpd_events.sqlite"
 DB_FOLDER = "data"
 DB_PATH = os.path.join(BASE_DIR, DB_FOLDER, DB_FILE)
 OCR_ENGINE = "easyocr" if engine.OCR_AVAILABLE == "easyocr" else ("paddle" if engine.OCR_AVAILABLE else None)
+MODEL_MATCH_THRESHOLD = 0.55
 
 lock = threading.RLock()
 db_lock = threading.RLock()
@@ -160,11 +161,46 @@ def save_detection_event(event):
             conn.commit()
 
 
+def _dedupe_bottom_ocr_text(value):
+    text = re.sub(r"[^A-Z0-9\s]", " ", str(value or "").upper())
+    words = [word for word in re.sub(r"\s+", " ", text).strip().split() if word]
+    if not words:
+        return "-"
+    kept = []
+    for word in words:
+        if any(engine.SequenceMatcher(None, word, existing).ratio() >= 0.82 for existing in kept):
+            continue
+        kept.append(word)
+        if len(kept) >= 4:
+            break
+    return " ".join(kept) or "-"
+
+
+def normalize_bottom_ocr_and_model(bottom_text, stored_model="-", allow_match=True):
+    raw_bottom = bottom_text if bottom_text and bottom_text != "-" else ""
+    stored = stored_model.strip() if isinstance(stored_model, str) else ""
+    if stored and stored != "-" and raw_bottom.strip().upper() != stored.upper():
+        return stored, stored, 0.95
+
+    if not allow_match:
+        return _dedupe_bottom_ocr_text(raw_bottom), "-", 0
+
+    matched_model, match_conf, _ = engine.match_car_model_fuzzy(raw_bottom)
+    if matched_model and match_conf >= MODEL_MATCH_THRESHOLD:
+        return matched_model, matched_model, match_conf
+
+    model = stored_model if stored_model and stored_model != "-" else "-"
+    if raw_bottom and model != "-" and raw_bottom.strip().upper() == model.strip().upper():
+        model = "-"
+    return _dedupe_bottom_ocr_text(raw_bottom), model, match_conf
+
+
 def detection_row_to_event(row):
     missing_fields = _safe_json_loads(row["missing_fields_json"], [])
     raw = _safe_json_loads(row["raw_json"], {})
     vehicle_type = row["vehicle_type"] or raw.get("type") or "-"
     capture_url = row["capture_url"] or (f"/plate_captures/{row['capture_file']}" if row["capture_file"] else None)
+    bottom_text_ocr, model, _ = normalize_bottom_ocr_and_model(row["bottom_text_raw"], row["model"], allow_match=False)
     event = {
         "id": row["id"],
         "timestamp": row["timestamp"],
@@ -178,10 +214,10 @@ def detection_row_to_event(row):
         "color": row["color"] or "-",
         "type": vehicle_type,
         "vehicle_type": vehicle_type,
-        "model": row["model"] or "-",
-        "car_model_matched": row["model"] or "-",
+        "model": model,
+        "car_model_matched": model,
         "bottom_text_raw": row["bottom_text_raw"] or "-",
-        "bottom_text_ocr": row["bottom_text_raw"] or "-",
+        "bottom_text_ocr": bottom_text_ocr,
         "main_number": row["main_number"] or row["number"] or "-",
         "display": row["display"] or row["number"] or "-",
         "confidence": float(row["confidence"] or 0),
@@ -650,8 +686,8 @@ def process_plate_crop(
         ) = preparsed
     color, color_conf = detect_plate_color(plate_crop, bottom_text, main_number)
     main_number = engine.normalize_number_for_plate_color(main_number, color)
-    matched_model, match_conf, _ = engine.match_car_model_fuzzy(bottom_text)
-    model = matched_model if matched_model and match_conf >= 0.70 else "-"
+    bottom_text_display, matched_model, match_conf = normalize_bottom_ocr_and_model(bottom_text)
+    model = matched_model if matched_model and matched_model != "-" and match_conf >= MODEL_MATCH_THRESHOLD else "-"
     township_name = engine.get_township_name(region, township)
     region_display = engine.format_region_display(region, township)
     vehicle_type = engine.get_vehicle_type(main_number, color, bottom_text)
@@ -660,6 +696,7 @@ def process_plate_crop(
         "region": region or "-", "township": township or "-", "number": number,
         "township_name": township_name or "-", "region_display": region_display,
         "main_number": main_number or "-", "bottom_text_raw": bottom_text or "-",
+        "bottom_text_ocr": bottom_text_display,
         "color": color or "-", "type": vehicle_type or "-", "vehicle_type": vehicle_type or "-",
         "model": model or "-", "car_model": model or "-", "display": number,
     }
@@ -697,6 +734,7 @@ def process_plate_crop(
         "vehicle_type": plate_data["vehicle_type"],
         "main_number": plate_data["main_number"],
         "bottom_text_raw": plate_data["bottom_text_raw"],
+        "bottom_text_ocr": plate_data["bottom_text_ocr"],
         "display": plate_data["display"],
         "recorded": True,
     }

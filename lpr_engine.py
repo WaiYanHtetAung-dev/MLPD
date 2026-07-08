@@ -196,12 +196,21 @@ def calculate_word_similarity(text1, text2):
 
 
 MODEL_OCR_REPAIRS = str.maketrans({
-    "0": "O",
-    "1": "I",
     "4": "A",
     "5": "S",
-    "7": "T",
     "8": "B",
+})
+
+MODEL_DIGIT_REPAIRS = str.maketrans({
+    "O": "0",
+    "Q": "0",
+    "D": "0",
+    "I": "1",
+    "L": "1",
+    "T": "7",
+    "B": "8",
+    "S": "5",
+    "A": "4",
 })
 
 
@@ -213,6 +222,42 @@ def normalize_model_ocr_text(text):
 
 def compact_model_text(text):
     return re.sub(r"[^A-Z0-9]", "", normalize_model_ocr_text(text))
+
+
+def digit_aware_model_text(text):
+    cleaned = re.sub(r"[^A-Z0-9\s]", " ", str(text).upper())
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    return cleaned.translate(MODEL_DIGIT_REPAIRS)
+
+
+def numeric_model_tokens(text):
+    tokens = digit_aware_model_text(text).split()
+    return [token for token in tokens if re.search(r"\d", token)]
+
+
+def numeric_model_score(ocr_text, model_text):
+    model_tokens = numeric_model_tokens(model_text)
+    if not model_tokens:
+        return 1.0
+    ocr_tokens = numeric_model_tokens(ocr_text)
+    if not ocr_tokens:
+        return 0.0
+    scores = []
+    for model_token in model_tokens:
+        best = max(SequenceMatcher(None, ocr_token, model_token).ratio() for ocr_token in ocr_tokens)
+        scores.append(best)
+    return sum(scores) / len(scores)
+
+
+def adjust_model_score_for_numbers(score, bottom_text, model_text):
+    number_score = numeric_model_score(bottom_text, model_text)
+    if number_score >= 0.9:
+        return min(score + 0.08, 0.95)
+    if number_score >= 0.7:
+        return score
+    if number_score <= 0.25:
+        return score * 0.62
+    return score * 0.82
 
 
 def best_compact_window_score(ocr_compact, model_compact):
@@ -284,6 +329,7 @@ def match_car_model_fuzzy(bottom_text):
             if len_diff <= 3 or len(model) >= len(bottom_text_clean) - 2:
                 confidence = len(model) / max(len(bottom_text_clean), 1)
                 confidence = min(confidence * 1.1, 0.85)
+                confidence = adjust_model_score_for_numbers(confidence, bottom_text_clean, model)
                 if confidence > best_confidence:
                     best_confidence = confidence
                     best_match = model
@@ -297,6 +343,7 @@ def match_car_model_fuzzy(bottom_text):
                 len_diff = abs(len(model) - len(bottom_text_clean))
                 if len_diff <= 5:
                     confidence = len(bottom_text_clean) / max(len(model), 1) * 0.8
+                    confidence = adjust_model_score_for_numbers(confidence, bottom_text_clean, model)
                     if confidence > best_confidence:
                         best_confidence = confidence
                         best_match = model
@@ -322,7 +369,8 @@ def match_car_model_fuzzy(bottom_text):
             for ocr_word in bottom_words[1:]
         ):
             combined_score += 0.08
-        if combined_score > best_confidence and combined_score >= 0.64:
+        combined_score = adjust_model_score_for_numbers(combined_score, bottom_text_clean, model_clean)
+        if combined_score > best_confidence and combined_score >= 0.58:
             best_confidence = min(combined_score, 0.88)
             best_match = model_clean
             best_match_original = CAR_MODELS_ORIGINAL[i]
@@ -343,6 +391,7 @@ def match_car_model_fuzzy(bottom_text):
             if bottom_words and model_words:
                 if bottom_words[0] == model_words[0]:
                     combined_score += 0.1
+            combined_score = adjust_model_score_for_numbers(combined_score, bottom_text_clean, model_clean)
             
             if combined_score > best_confidence and combined_score > 0.4:
                 best_confidence = combined_score
@@ -365,6 +414,7 @@ def match_car_model_fuzzy(bottom_text):
             len_diff = abs(len(CAR_MODELS[best_idx]) - len(bottom_text_clean))
             if len_diff <= 4:
                 confidence = min(best_ratio * 0.9, 0.75)
+                confidence = adjust_model_score_for_numbers(confidence, bottom_text_clean, CAR_MODELS[best_idx])
                 if confidence > best_confidence:
                     best_confidence = confidence
                     best_match = CAR_MODELS[best_idx]
@@ -622,8 +672,8 @@ def read_easyocr(image):
         return ocr.readtext(image, allowlist=OCR_ALLOWLIST)
 
 try:
-    if sys.version_info >= (3, 14):
-        raise RuntimeError("PaddleOCR is unavailable on Python 3.14+; using EasyOCR fallback")
+    if sys.platform.startswith("win") and sys.version_info >= (3, 14):
+        raise RuntimeError("PaddleOCR is unavailable on Windows Python 3.14+")
     from paddleocr import PaddleOCR
     print("Initializing PaddleOCR...")
     try:

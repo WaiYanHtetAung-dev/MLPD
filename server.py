@@ -34,9 +34,10 @@ app.mount("/plate_captures", StaticFiles(directory=BASE_DIR / backend.SAVE_FOLDE
 @app.get("/", response_class=HTMLResponse)
 def index():
     index_path = BASE_DIR / "dashboard.html"
+    headers = {"Cache-Control": "no-store, max-age=0"}
     if index_path.exists():
-        return HTMLResponse(index_path.read_text(encoding='utf-8'))
-    return HTMLResponse("<h1>LPR FastAPI</h1>")
+        return HTMLResponse(index_path.read_text(encoding='utf-8'), headers=headers)
+    return HTMLResponse("<h1>LPR FastAPI</h1>", headers=headers)
 
 
 @app.get("/video_feed")

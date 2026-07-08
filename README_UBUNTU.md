@@ -14,6 +14,8 @@ Remote project folder:
 
 ## Upload From Windows
 
+This Ubuntu deployment package now includes the same supporting rule files and static assets used by the main MLPD project so the app can run with the expected configuration.
+
 From PowerShell in this folder:
 
 ```powershell

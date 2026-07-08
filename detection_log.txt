@@ -4309,3 +4309,468 @@ DISPLAY: -
 STATUS: Fail
 MISSING FIELDS: number, region, township, type, model
 ============================================================
+
+============================================================
+TIME: 2026-06-09 14:43:34
+FILE: D:\kosithu\MLPD\captures/plate_20260609_144334_465.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: -
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Unknown
+DISPLAY: -
+STATUS: Fail
+MISSING FIELDS: number, region, township, type, model
+============================================================
+
+============================================================
+TIME: 2026-06-09 14:43:48
+FILE: D:\kosithu\MLPD\captures/plate_20260609_144348_909.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: DD-9345
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: DD-9345
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-09 14:44:28
+FILE: D:\kosithu\MLPD\captures/plate_20260609_144428_853.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6F-7676
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 6F-7676
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-09 14:47:33
+FILE: D:\kosithu\MLPD\captures/plate_20260609_144733_090.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6M-7341
+BOTTOM TEXT (OCR): MPRU BAR SXX
+CAR MODEL (MATCHED): MPRU BAR SXX
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6M-7341
+STATUS: Fail
+MISSING FIELDS: region, township
+============================================================
+
+============================================================
+TIME: 2026-06-09 14:53:02
+FILE: D:\kosithu\MLPD\captures/plate_20260609_145302_463.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 1L-4493
+BOTTOM TEXT (OCR): TOYOTA ALPHARD UOYI H2NDO TAYOTA ALEHAIO
+CAR MODEL (MATCHED): TOYOTA ALPHARD UOYI H2NDO TAYOTA ALEHAIO
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 1L-4493
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:08:15
+FILE: D:\kosithu\MLPD\captures/plate_20260609_150815_379.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6F-7676
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 6F-7676
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:08:33
+FILE: D:\kosithu\MLPD\captures/plate_20260609_150833_860.jpg
+REGION: YGN
+TOWNSHIP: 42
+MAIN NUMBER: 6S-8624
+BOTTOM TEXT (OCR): SPORTACE XXA SPOATACT SMNEY UZA
+CAR MODEL (MATCHED): SPORTACE XXA SPOATACT SMNEY UZA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 6S-8624
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:08:53
+FILE: D:\kosithu\MLPD\captures/plate_20260609_150853_551.jpg
+REGION: YGN
+TOWNSHIP: 10
+MAIN NUMBER: 3Q-3364
+BOTTOM TEXT (OCR): SUZUKRERNIGA SUZUKI ERTIGA SUEUKX EATIGA
+CAR MODEL (MATCHED): SUZUKRERNIGA SUZUKI ERTIGA SUEUKX EATIGA
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3Q-3364
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:09:10
+FILE: D:\kosithu\MLPD\captures/plate_20260609_150910_364.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9R-5543
+BOTTOM TEXT (OCR): CHEYROLETISPARK CHEYROLET SPARK CAN AAN
+CAR MODEL (MATCHED): CHEYROLETISPARK CHEYROLET SPARK CAN AAN
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9R-5543
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:19:20
+FILE: D:\kosithu\MLPD\captures/plate_20260609_151920_129.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 4E-7936
+BOTTOM TEXT (OCR): TO10TA PROROE MMRA E TEYRA PASE7
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 4E-7936
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:19:36
+FILE: D:\kosithu\MLPD\captures/plate_20260609_151936_406.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6F-7676
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 6F-7676
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:33:09
+FILE: D:\kosithu\MLPD\captures/plate_20260609_153309_418.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 3G-6038
+BOTTOM TEXT (OCR): HODAPANTNERL HOMDA PARTMER HONDA PARTMER MOMDA PARINN
+CAR MODEL (MATCHED): HONDA PARTNER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3G-6038
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:34:45
+FILE: D:\kosithu\MLPD\captures/plate_20260609_153445_698.jpg
+REGION: YGN
+TOWNSHIP: 29
+MAIN NUMBER: FF-2484
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: FF-2484
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:44:16
+FILE: D:\kosithu\MLPD\captures/plate_20260609_154416_595.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 6F-7676
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 6F-7676
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:45:18
+FILE: D:\kosithu\MLPD\captures/plate_20260609_154518_228.jpg
+REGION: YGN
+TOWNSHIP: 29
+MAIN NUMBER: FF-2484
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: FF-2484
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:51:09
+FILE: D:\kosithu\MLPD\captures/plate_20260609_155109_184.jpg
+REGION: YGN
+TOWNSHIP: 44
+MAIN NUMBER: 4E-7936
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Hire / Truck
+DISPLAY: 4E-7936
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:51:39
+FILE: D:\kosithu\MLPD\captures/plate_20260609_155139_604.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 2R-9890
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2R-9890
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:52:18
+FILE: D:\kosithu\MLPD\captures/plate_20260609_155218_548.jpg
+REGION: YGN
+TOWNSHIP: 43
+MAIN NUMBER: 2D-3805
+BOTTOM TEXT (OCR): TOYOTACANRY TOYOTA CAMAY TOYOTA CAMRY
+CAR MODEL (MATCHED): TOYOTA CAMRY
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2D-3805
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-09 15:52:50
+FILE: D:\kosithu\MLPD\captures/plate_20260609_155250_540.jpg
+REGION: YGN
+TOWNSHIP: 10
+MAIN NUMBER: 9E-1583
+BOTTOM TEXT (OCR): ERCEDESIBENZ MERCEDES DENZ NERCEDES BENZ NERCEDES BENZ
+CAR MODEL (MATCHED): MERCEDES-BENZ GLE
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9E-1583
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-09 16:06:11
+FILE: D:\kosithu\MLPD\captures/plate_20260609_160611_503.jpg
+REGION: YGN
+TOWNSHIP: 29
+MAIN NUMBER: FF-2484
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: FF-2484
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-09 16:06:57
+FILE: D:\kosithu\MLPD\captures/plate_20260609_160657_413.jpg
+REGION: -
+TOWNSHIP: -
+MAIN NUMBER: 2R-9890
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2R-9890
+STATUS: Fail
+MISSING FIELDS: region, township, model
+============================================================
+
+============================================================
+TIME: 2026-06-09 16:07:36
+FILE: D:\kosithu\MLPD\captures/plate_20260609_160736_485.jpg
+REGION: YGN
+TOWNSHIP: 6
+MAIN NUMBER: 7P-5844
+BOTTOM TEXT (OCR): WMI DTLE 5TN 0L1
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 7P-5844
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-06-09 16:08:01
+FILE: D:\kosithu\MLPD\captures/plate_20260609_160801_742.jpg
+REGION: BGO
+TOWNSHIP: 2
+MAIN NUMBER: 2G-2027
+BOTTOM TEXT (OCR): BELYLYOLYSYCENIEEY OAII FAN VOLKSRAGEN ID4 EV FAI YOLISTICEN ICS EV
+CAR MODEL (MATCHED): VOLKSWAGEN ID.4 EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2G-2027
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-06-25 09:54:11
+FILE: D:\kosithu\MLPD\captures/plate_20260625_095411_149.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 3S-8978
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-8978
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-07-02 11:12:37
+FILE: D:\kosithu\MLPD\captures/plate_20260702_111237_714.jpg
+REGION: YGN
+TOWNSHIP: 41
+MAIN NUMBER: 3S-8978
+BOTTOM TEXT (OCR): -
+CAR MODEL (MATCHED): -
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 3S-8978
+STATUS: Fail
+MISSING FIELDS: model
+============================================================
+
+============================================================
+TIME: 2026-07-02 11:15:18
+FILE: D:\kosithu\MLPD\captures/plate_20260702_111518_120.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: FF-2484
+BOTTOM TEXT (OCR): WCELOE TOROHA CORULTA FXECDER TOTOTA COROLLAFTELOER TOF0TA COROLLA FJELDER
+CAR MODEL (MATCHED): TOYOTA COROLLA FIELDER
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: FF-2484
+STATUS: Fail
+MISSING FIELDS: township
+============================================================
+
+============================================================
+TIME: 2026-07-02 11:15:55
+FILE: D:\kosithu\MLPD\captures/plate_20260702_111555_541.jpg
+REGION: YGN
+TOWNSHIP: -
+MAIN NUMBER: CD 32-63
+BOTTOM TEXT (OCR): TANC U8 BYD YANG NANG UB TANC UB DANC 00 BYDYANC YANG BYDYANG BYD
+CAR MODEL (MATCHED): BYD YANG WANG U8 EV
+COLOR: white
+VEHICLE TYPE: Embassy
+DISPLAY: CD 32-63
+STATUS: Fail
+MISSING FIELDS: township
+============================================================
+
+============================================================
+TIME: 2026-07-02 11:32:30
+FILE: D:\kosithu\MLPD\captures/plate_20260702_113230_263.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-4133
+BOTTOM TEXT (OCR): EV ZEBRI YICTORYZEBARNEV ZEBAI VICTORY ZEBRA VCTORI VECTORT
+CAR MODEL (MATCHED): VICTORY ZEBRA EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-4133
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-07-02 11:51:11
+FILE: D:\kosithu\MLPD\captures/plate_20260702_115111_553.jpg
+REGION: BGO
+TOWNSHIP: 11
+MAIN NUMBER: 2K-4389
+BOTTOM TEXT (OCR): NISSAWICLIPPER MISSAN CLIPPER NISSAN CLIPPER
+CAR MODEL (MATCHED): NISSAN CLIPPER
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 2K-4389
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-07-03 10:07:50
+FILE: D:\kosithu\MLPD\captures/plate_20260703_100750_462.jpg
+REGION: YGN
+TOWNSHIP: 11
+MAIN NUMBER: AA-3375
+BOTTOM TEXT (OCR): WISSANLADY NISSAN AD MISSAN AD
+CAR MODEL (MATCHED): NISSAN Z
+COLOR: red
+VEHICLE TYPE: Taxi
+DISPLAY: AA-3375
+STATUS: Success
+MISSING FIELDS: -
+============================================================
+
+============================================================
+TIME: 2026-07-03 10:08:41
+FILE: D:\kosithu\MLPD\captures/plate_20260703_100841_643.jpg
+REGION: BGO
+TOWNSHIP: 27
+MAIN NUMBER: 9S-4133
+BOTTOM TEXT (OCR): EV ZEBRI YICTORYZEBARNEV ZEBAI VICTORY ZEBRA VCTORI VECTORT
+CAR MODEL (MATCHED): VICTORY ZEBRA EV
+COLOR: black
+VEHICLE TYPE: Private
+DISPLAY: 9S-4133
+STATUS: Success
+MISSING FIELDS: -
+============================================================

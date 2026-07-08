@@ -1,0 +1,23 @@
+# Myanmar region/township plate rule file
+# Format:
+# StateOrRegion|Code|TownshipNumeralRange|Example|RulePattern
+#
+# RulePattern note:
+# <CODE>-<N> means the plate starts with the region code, hyphen, then a township numeral.
+# N must be inside the listed range for that region.
+
+Ayeyarwady|AYY|1-26|AYY-5 (Pathein)|AYY-<1..26>
+Bago|BGO|1-28|BGO-2 (Taungoo)|BGO-<1..28>
+Chin|CHN|1-9|CHN-9 (Hakha)|CHN-<1..9>
+Kayah|KYH|1-7|KYH-7 (Loikaw)|KYH-<1..7>
+Kachin|KCN|1-18|KCN-16 (Myitkyina)|KCN-<1..18>
+Kayin|KYN|1-7|KYN-4 (Hpa-an)|KYN-<1..7>
+Magway|MGY|1-25|MGY-12 (Magway)|MGY-<1..25>
+Mandalay|MDY|1-28|MDY-18 (Amarapura)|MDY-<1..28>
+Mon|MON|1-10|MON-4 (Mawlamyine)|MON-<1..10>
+Naypyitaw|NPW|1-8|NPW-1 (Zabuthiri)|NPW-<1..8>
+Rakhine|RKE|1-17|RKE-5 (Sittwe)|RKE-<1..17>
+Sagaing|SGG|1-37|SGG-28 (Monywa)|SGG-<1..37>
+Shan|SHN|1-55|SHN-18 (Taunggyi)|SHN-<1..55>
+Tanintharyi|TNI|1-10|TNI-3 (Dawei)|TNI-<1..10>
+Yangon|YGN|1-45|YGN-13 (North Dagon)|YGN-<1..45>
