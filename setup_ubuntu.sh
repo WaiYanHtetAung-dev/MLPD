@@ -59,9 +59,15 @@ missing = [name for name in required_modules if importlib.util.find_spec(name) i
 if missing:
     raise SystemExit(f"Missing modules after setup: {', '.join(missing)}")
 import lpr_engine
+paddleocr_ok = importlib.util.find_spec("paddleocr") is not None
+paddle_ok = importlib.util.find_spec("paddle") is not None
+if not (paddleocr_ok and paddle_ok):
+    raise SystemExit(
+        "Paddle install failed. Re-run setup after checking Python 3.12 and package download access."
+    )
 print("Python executable:", sys.executable)
-print("PaddleOCR installed:", importlib.util.find_spec("paddleocr") is not None)
-print("PaddlePaddle installed:", importlib.util.find_spec("paddle") is not None)
+print("PaddleOCR installed:", paddleocr_ok)
+print("PaddlePaddle installed:", paddle_ok)
 print("lpr_engine import smoke test: OK")
 PY
 

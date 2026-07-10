@@ -25,6 +25,8 @@ def main() -> None:
     parser.add_argument("--stdout-log", required=True)
     parser.add_argument("--stderr-log", required=True)
     parser.add_argument("--pid-file", required=True)
+    parser.add_argument("--ssl-certfile")
+    parser.add_argument("--ssl-keyfile")
     args = parser.parse_args()
 
     root = Path(args.root).resolve()
@@ -51,6 +53,8 @@ def main() -> None:
         port=args.port,
         log_level="info",
         access_log=True,
+        ssl_certfile=args.ssl_certfile if args.ssl_certfile and args.ssl_keyfile else None,
+        ssl_keyfile=args.ssl_keyfile if args.ssl_certfile and args.ssl_keyfile else None,
     )
 
 

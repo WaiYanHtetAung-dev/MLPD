@@ -421,10 +421,10 @@ def match_car_model_fuzzy(bottom_text):
                     best_match_original = CAR_MODELS_ORIGINAL[best_idx]
                     best_match_details = f"SequenceMatcher ratio={best_ratio:.2f}"
     
-    if best_confidence >= 0.45:
-        print(f"[CAR MATCH] '{bottom_text_clean}' → '{best_match_original}' (conf: {best_confidence:.1%}, method: {best_match_details})")
+    if best_match_original and best_confidence >= 0.25:
+        print(f"[CAR MATCH] '{bottom_text_clean}' → '{best_match_original}' (conf: {best_confidence:.1%}, method: {best_match_details or 'fallback'})")
         return best_match_original, best_confidence, best_match
-    
+
     print(f"[CAR MATCH] No good match for '{bottom_text_clean}' (best conf: {best_confidence:.1%})")
     return "", 0, ""
 
@@ -636,13 +636,27 @@ os.environ['TEMP'] = os.path.join(BASE_DIR, ".runtime-temp")
 os.environ['TMP'] = os.environ['TEMP']
 os.environ.setdefault('PADDLE_PDX_MODEL_SOURCE', 'BOS')
 os.environ.setdefault('PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK', 'True')
+os.environ.setdefault('FLAGS_json_format_model', '0')
+os.environ.setdefault('PADDLE_PDX_ENABLE_MKLDNN_BYDEFAULT', '0')
+os.environ.setdefault('PADDLE_PDX_DISABLE_MKLDNN_MODEL_BL', '1')
+os.environ.setdefault('PADDLE_PDX_USE_PIR_TRT', '0')
+os.environ.setdefault('FLAGS_use_onednn', '0')
+os.environ.setdefault('FLAGS_use_mkldnn', '0')
+os.environ.setdefault('FLAGS_enable_pir_api', '0')
+os.environ.setdefault('FLAGS_enable_pir_in_executor', '0')
 os.makedirs(os.environ['PADDLE_HOME'], exist_ok=True)
 os.makedirs(os.environ['XDG_CACHE_HOME'], exist_ok=True)
 os.makedirs(os.environ['TEMP'], exist_ok=True)
 
 OCR_AVAILABLE = False
 ocr = None
+easyocr_reader = None
 OCR_ALLOWLIST = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789- "
+USE_PADDLE_OCR = os.environ.get("MLPD_USE_PADDLE_OCR", "1").lower() in {"1", "true", "yes", "on"}
+PADDLE_FAST_MODE = os.environ.get("MLPD_PADDLE_FAST_MODE", "1").lower() in {"1", "true", "yes", "on"}
+PADDLE_MODEL_DIR = os.path.join(BASE_DIR, ".paddlex", "official_models")
+PADDLE_DET_MODEL_NAME = os.environ.get("MLPD_PADDLE_DET_MODEL_NAME", "").strip()
+PADDLE_REC_MODEL_NAME = os.environ.get("MLPD_PADDLE_REC_MODEL_NAME", "en_PP-OCRv5_mobile_rec")
 
 
 def clean_ocr_text(text, keep_space=True):
@@ -652,10 +666,55 @@ def clean_ocr_text(text, keep_space=True):
     return re.sub(r"\s+", " ", cleaned).strip()
 
 
+def get_ocr_preprocess_methods(scope="general"):
+    """
+    Keep Paddle on the fastest useful path by default.
+    EasyOCR still gets a broader retry set because it tends to need more help.
+    """
+    if OCR_AVAILABLE == "easyocr":
+        if scope in {"bottom", "region", "township"}:
+            return ("standard", "enhance", "adaptive", "sharpen", "invert")
+        return ("standard", "enhance", "adaptive", "sharpen")
+
+    if PADDLE_FAST_MODE:
+        return ("standard",)
+
+    if scope == "bottom":
+        return ("standard", "enhance")
+    return ("standard", "enhance")
+
+
+def pick_existing_paddle_model(model_names):
+    for model_name in model_names:
+        if not model_name:
+            continue
+        model_dir = os.path.join(PADDLE_MODEL_DIR, model_name)
+        if os.path.isdir(model_dir):
+            return model_name, model_dir
+    return "", None
+
+
 def read_easyocr(image):
     """Run EasyOCR with plate-specific settings and a safe fallback."""
+    global easyocr_reader
+    if easyocr_reader is None:
+        try:
+            import easyocr as easyocr_module
+            easyocr_dir = os.path.join(BASE_DIR, ".easyocr")
+            os.makedirs(easyocr_dir, exist_ok=True)
+            easyocr_reader = easyocr_module.Reader(
+                ['en'],
+                gpu=False,
+                model_storage_directory=easyocr_dir,
+                user_network_directory=easyocr_dir,
+                download_enabled=False,
+            )
+            print("✅ EasyOCR fallback ready!")
+        except Exception as exc:
+            print(f"⚠️ EasyOCR fallback unavailable: {exc}")
+            return []
     try:
-        return ocr.readtext(
+        return easyocr_reader.readtext(
             image,
             allowlist=OCR_ALLOWLIST,
             detail=1,
@@ -669,24 +728,139 @@ def read_easyocr(image):
             link_threshold=0.35,
         )
     except TypeError:
-        return ocr.readtext(image, allowlist=OCR_ALLOWLIST)
+        return easyocr_reader.readtext(image, allowlist=OCR_ALLOWLIST)
+
+
+def use_easyocr_fallback(reason=""):
+    global OCR_AVAILABLE
+    if OCR_AVAILABLE == "easyocr":
+        return True
+    try:
+        read_easyocr(np.zeros((8, 8, 3), dtype=np.uint8))
+        if easyocr_reader is not None:
+            OCR_AVAILABLE = "easyocr"
+            if reason:
+                print(f"⚠️ Switching OCR backend to EasyOCR: {reason}")
+            return True
+    except Exception:
+        return False
+    return False
+
+
+def extract_ocr_detections(image, method="standard"):
+    """Return OCR detections as dictionaries with text, confidence, and optional box."""
+    if not OCR_AVAILABLE or image is None or image.size == 0:
+        return []
+
+    h, w = image.shape[:2]
+    if w < 720:
+        scale = 720 / max(w, 1)
+        new_w = int(w * scale)
+        new_h = int(h * scale)
+        image = cv2.resize(image, (new_w, new_h), interpolation=cv2.INTER_CUBIC)
+
+    methods_to_try = [method]
+    if OCR_AVAILABLE == "easyocr" and method == "standard":
+        methods_to_try += ["enhance", "adaptive", "sharpen", "invert"]
+    elif OCR_AVAILABLE != "easyocr" and method == "standard" and not PADDLE_FAST_MODE:
+        methods_to_try.append("enhance")
+
+    detections = []
+    for method_name in methods_to_try:
+        processed = preprocess_for_ocr(image, method_name)
+        if OCR_AVAILABLE == "easyocr":
+            for detection in read_easyocr(processed):
+                box, text, confidence = detection
+                detections.append({
+                    "text": text,
+                    "confidence": float(confidence),
+                    "box": box,
+                    "method": method_name,
+                })
+            continue
+
+        try:
+            paddle_input = cv2.cvtColor(processed, cv2.COLOR_GRAY2BGR) if processed.ndim == 2 else processed
+            result = ocr.predict(paddle_input) if hasattr(ocr, "predict") else ocr.ocr(paddle_input)
+        except Exception as exc:
+            print(f"OCR backend error ({method_name}): {exc}")
+            if use_easyocr_fallback(str(exc)):
+                for detection in read_easyocr(processed):
+                    box, text, confidence = detection
+                    detections.append({
+                        "text": text,
+                        "confidence": float(confidence),
+                        "box": box,
+                        "method": method_name,
+                    })
+            continue
+
+        for item in result or []:
+            item_data = item.json if hasattr(item, "json") else item
+            if isinstance(item_data, dict) and "res" in item_data:
+                item_data = item_data["res"]
+            if isinstance(item_data, dict):
+                texts = item_data.get("rec_texts", [])
+                scores = item_data.get("rec_scores", [])
+                boxes = item_data.get("rec_boxes", [])
+                for index, (text, conf) in enumerate(zip(texts, scores)):
+                    box = boxes[index] if index < len(boxes) else None
+                    detections.append({
+                        "text": text,
+                        "confidence": float(conf),
+                        "box": box,
+                        "method": method_name,
+                    })
+            elif isinstance(item_data, list):
+                for line in item_data:
+                    if line and len(line) > 1:
+                        box = line[0] if len(line) > 0 else None
+                        text, conf = line[1][0], line[1][1]
+                        detections.append({
+                            "text": text,
+                            "confidence": float(conf),
+                            "box": box,
+                            "method": method_name,
+                        })
+
+    return detections
 
 try:
+    if not USE_PADDLE_OCR:
+        raise RuntimeError("PaddleOCR disabled by default; using EasyOCR backend")
     if sys.platform.startswith("win") and sys.version_info >= (3, 14):
         raise RuntimeError("PaddleOCR is unavailable on Windows Python 3.14+")
     from paddleocr import PaddleOCR
     print("Initializing PaddleOCR...")
     try:
-        paddle_models = os.path.join(BASE_DIR, ".paddlex", "official_models")
-        ocr = PaddleOCR(
+        paddle_models = PADDLE_MODEL_DIR
+        det_candidates = []
+        if PADDLE_DET_MODEL_NAME:
+            det_candidates.append(PADDLE_DET_MODEL_NAME)
+        if PADDLE_FAST_MODE:
+            det_candidates.extend(["PP-OCRv5_mobile_det", "PP-OCRv5_server_det"])
+        else:
+            det_candidates.extend(["PP-OCRv5_server_det", "PP-OCRv5_mobile_det"])
+        det_candidates = list(dict.fromkeys(det_candidates))
+        det_model_name, det_model_dir = pick_existing_paddle_model(det_candidates)
+        rec_model_name, rec_model_dir = pick_existing_paddle_model([PADDLE_REC_MODEL_NAME, "en_PP-OCRv5_mobile_rec"])
+        if not rec_model_name:
+            rec_model_name = PADDLE_REC_MODEL_NAME
+        paddle_kwargs = dict(
             lang='en',
             use_doc_orientation_classify=False,
             use_doc_unwarping=False,
             use_textline_orientation=False,
-            text_detection_model_name="PP-OCRv5_server_det",
-            text_detection_model_dir=os.path.join(paddle_models, "PP-OCRv5_server_det"),
-            text_recognition_model_name="en_PP-OCRv5_mobile_rec",
-            text_recognition_model_dir=os.path.join(paddle_models, "en_PP-OCRv5_mobile_rec"),
+            text_recognition_model_name=rec_model_name,
+            text_recognition_model_dir=rec_model_dir,
+        )
+        if det_model_dir:
+            paddle_kwargs.update(
+                text_detection_model_name=det_model_name,
+                text_detection_model_dir=det_model_dir,
+            )
+        ocr = PaddleOCR(
+            **paddle_kwargs,
         )
     except TypeError:
         ocr = PaddleOCR(lang='en', show_log=False, use_angle_cls=False, use_gpu=False)
@@ -706,8 +880,8 @@ except Exception as e:
         )
         OCR_AVAILABLE = "easyocr"
         print("✅ EasyOCR ready!")
-    except:
-        print("⚠️ No OCR available")
+    except Exception as easyocr_error:
+        print(f"⚠️ No OCR available: {easyocr_error}")
 
 # =========================================================
 # LOAD MODELS
@@ -763,62 +937,21 @@ def simple_ocr_enhanced(image, method="standard"):
     """Enhanced OCR with preprocessing options"""
     if not OCR_AVAILABLE or image is None or image.size == 0:
         return "", 0
-    
+
     try:
-        h, w = image.shape[:2]
-        if w < 720:
-            scale = 720 / max(w, 1)
-            new_w = int(w * scale)
-            new_h = int(h * scale)
-            image = cv2.resize(image, (new_w, new_h), interpolation=cv2.INTER_CUBIC)
-        
-        methods_to_try = [method]
-        if method == "standard":
-            methods_to_try += ["enhance", "adaptive", "sharpen", "invert"]
         best_text = ""
         best_conf = 0
-        
-        temp_path = os.path.join(RUNTIME_TEMP, f"ocr_{uuid.uuid4().hex}.jpg")
-        
-        for method_name in methods_to_try:
-            processed = preprocess_for_ocr(image, method_name)
-            
-            if OCR_AVAILABLE == "easyocr":
-                result = read_easyocr(processed)
-                for detection in result:
-                    text = detection[1]
-                    conf = detection[2]
-                    if conf > best_conf and len(text) >= 2:
-                        best_text = text
-                        best_conf = conf
-                        print(f"[OCR {method_name}] Found: '{text}' (conf: {conf:.2%})")
-            else:
-                paddle_input = cv2.cvtColor(processed, cv2.COLOR_GRAY2BGR) if processed.ndim == 2 else processed
-                result = ocr.predict(paddle_input) if hasattr(ocr, "predict") else ocr.ocr(paddle_input)
-                for item in result or []:
-                    item_data = item.json if hasattr(item, "json") else item
-                    if isinstance(item_data, dict) and "res" in item_data:
-                        item_data = item_data["res"]
-                    if isinstance(item_data, dict):
-                        texts = item_data.get("rec_texts", [])
-                        scores = item_data.get("rec_scores", [])
-                        for text, conf in zip(texts, scores):
-                            if conf > best_conf and len(text) >= 2:
-                                best_text, best_conf = text, float(conf)
-                    elif isinstance(item_data, list):
-                        for line in item_data:
-                            if line and len(line) > 1:
-                                text, conf = line[1][0], line[1][1]
-                                if conf > best_conf and len(text) >= 2:
-                                    best_text, best_conf = text, float(conf)
-        
-        if os.path.exists(temp_path):
-            os.remove(temp_path)
+        for detection in extract_ocr_detections(image, method):
+            text = detection.get("text", "")
+            conf = float(detection.get("confidence", 0))
+            if conf > best_conf and len(text) >= 2:
+                best_text = text
+                best_conf = conf
+                print(f"[OCR {detection.get('method', method)}] Found: '{text}' (conf: {conf:.2%})")
+
         cleaned = clean_ocr_text(best_text)
-        
         print(f"[OCR FINAL] Best text: '{cleaned}' (conf: {best_conf:.2%})")
         return cleaned, best_conf
-        
     except Exception as e:
         print(f"OCR error: {e}")
         return "", 0
@@ -831,42 +964,14 @@ def get_ocr_candidates(image, method="standard"):
     """Return every OCR line so plate-number parsing does not lose a lower-confidence line."""
     if not OCR_AVAILABLE or image is None or image.size == 0:
         return []
-
-    h, w = image.shape[:2]
-    if w < 720:
-        scale = 720 / max(w, 1)
-        image = cv2.resize(image, (720, max(1, int(h * scale))), interpolation=cv2.INTER_CUBIC)
-    processed = preprocess_for_ocr(image, method)
     candidates = []
 
     try:
-        if OCR_AVAILABLE == "easyocr":
-            for detection in read_easyocr(processed):
-                text, confidence = detection[1], float(detection[2])
-                cleaned = clean_ocr_text(text)
-                if cleaned:
-                    candidates.append((cleaned, confidence))
-        else:
-            paddle_input = cv2.cvtColor(processed, cv2.COLOR_GRAY2BGR) if processed.ndim == 2 else processed
-            result = ocr.predict(paddle_input) if hasattr(ocr, "predict") else ocr.ocr(paddle_input)
-            for item in result or []:
-                item_data = item.json if hasattr(item, "json") else item
-                if isinstance(item_data, dict) and "res" in item_data:
-                    item_data = item_data["res"]
-                if isinstance(item_data, dict):
-                    lines = zip(item_data.get("rec_texts", []), item_data.get("rec_scores", []))
-                elif isinstance(item_data, list):
-                    lines = (
-                        (line[1][0], line[1][1])
-                        for line in item_data
-                        if line and len(line) > 1
-                    )
-                else:
-                    lines = []
-                for text, confidence in lines:
-                    cleaned = clean_ocr_text(text)
-                    if cleaned:
-                        candidates.append((cleaned, float(confidence)))
+        for detection in extract_ocr_detections(image, method):
+            cleaned = clean_ocr_text(detection.get("text", ""))
+            confidence = float(detection.get("confidence", 0))
+            if cleaned:
+                candidates.append((cleaned, confidence))
     except Exception as exc:
         print(f"OCR candidate error: {exc}")
 
@@ -877,40 +982,19 @@ def get_positioned_ocr_lines(image, method="standard"):
     """Return OCR lines with normalized vertical positions for three-line plates."""
     if not OCR_AVAILABLE or image is None or image.size == 0:
         return []
-    h, w = image.shape[:2]
-    if w > 960:
-        scale = 960 / w
-        image = cv2.resize(image, (960, max(1, int(h * scale))), interpolation=cv2.INTER_AREA)
-        h, w = image.shape[:2]
-    if w < 720:
-        scale = 720 / max(w, 1)
-        image = cv2.resize(image, (720, max(1, int(h * scale))), interpolation=cv2.INTER_CUBIC)
-    processed = preprocess_for_ocr(image, method)
-    result = ocr.predict(cv2.cvtColor(processed, cv2.COLOR_GRAY2BGR)) if OCR_AVAILABLE != "easyocr" else None
     lines = []
-    if OCR_AVAILABLE == "easyocr":
-        for box, text, confidence in read_easyocr(processed):
-            y_center = sum(point[1] for point in box) / (len(box) * processed.shape[0])
-            cleaned = clean_ocr_text(text)
-            if cleaned:
-                lines.append((cleaned, float(confidence), y_center))
-        return lines
-
-    for item in result or []:
-        data = item.json if hasattr(item, "json") else item
-        if isinstance(data, dict) and "res" in data:
-            data = data["res"]
-        if not isinstance(data, dict):
+    for detection in extract_ocr_detections(image, method):
+        cleaned = clean_ocr_text(detection.get("text", ""))
+        if not cleaned:
             continue
-        texts, scores = data.get("rec_texts", []), data.get("rec_scores", [])
-        boxes = data.get("rec_boxes", [])
-        for index, (text, confidence) in enumerate(zip(texts, scores)):
-            cleaned = clean_ocr_text(text)
-            if not cleaned:
-                continue
-            box = boxes[index] if index < len(boxes) else None
-            y_center = ((float(box[1]) + float(box[3])) / 2 / processed.shape[0]) if box is not None else 0.5
-            lines.append((cleaned, float(confidence), y_center))
+        box = detection.get("box")
+        y_center = 0.5
+        if box is not None:
+            try:
+                y_center = (float(box[1]) + float(box[3])) / 2 / max(image.shape[0], 1)
+            except Exception:
+                y_center = 0.5
+        lines.append((cleaned, float(detection.get("confidence", 0)), y_center))
     return lines
 
 
@@ -930,6 +1014,7 @@ def merge_same_row_ocr_lines(lines, tolerance=0.06):
 
 def collect_positioned_ocr_lines(image, methods=("standard", "enhance", "adaptive", "sharpen")):
     """Collect OCR rows from several preprocess variants and remove duplicates."""
+    methods = get_ocr_preprocess_methods("positioned")
     collected = []
     seen = set()
     for method in methods:
@@ -1033,6 +1118,19 @@ def analyze_plate_text_fast(plate_img):
         elif matched_region == region and matched_township and matched_township_conf > township_conf:
             township, township_conf = matched_township, matched_township_conf
 
+    if not region:
+        region, region_conf = read_region_code(plate_img)
+    if region and not township:
+        township, township_conf = read_township_from_region(plate_img, region)
+    if not region and top_candidates:
+        top_text = " ".join(text for text, _ in top_candidates)
+        matched_region, matched_region_conf, matched_township, matched_township_conf = extract_region_township_from_text(top_text, max((confidence for _, confidence in top_candidates), default=0))
+        if matched_region:
+            region, region_conf = matched_region, matched_region_conf
+            township, township_conf = matched_township, matched_township_conf
+    if region and not township:
+        township, township_conf = read_township_from_region(plate_img, region)
+
     bottom_text, bottom_conf = "", 0
     bottom_candidates = [(text, confidence) for text, confidence, y_center in positioned if y_center >= 0.58]
     for text, confidence in bottom_candidates:
@@ -1049,6 +1147,11 @@ def analyze_plate_text_fast(plate_img):
         ):
             bottom_text = re.sub(r"[^A-Z0-9\s]", "", text.upper()).strip()
             bottom_conf = confidence
+
+    if not bottom_text:
+        fallback_bottom, fallback_conf = read_bottom_text(plate_img)
+        if fallback_conf > bottom_conf:
+            bottom_text, bottom_conf = fallback_bottom, fallback_conf
 
     print(
         f"[FAST OCR] region={region}-{township}, main={main_number}, "
@@ -1329,7 +1432,7 @@ def read_main_number(plate_img):
     valid_candidates = []
     for y1, y2 in regions_to_try:
         middle = plate_img[y1:y2, :]
-        for method in ("standard", "enhance", "sharpen"):
+        for method in get_ocr_preprocess_methods("main_number"):
             for text, confidence in get_ocr_candidates(middle, method):
                 number = extract_main_number(text)
                 if number:
@@ -1368,7 +1471,7 @@ def read_region_code(plate_img):
     for y1, y2 in portions:
         region_img = plate_img[y1:y2, :]
         
-        for preprocess_method in ["standard", "enhance", "sharpen"]:
+        for preprocess_method in get_ocr_preprocess_methods("region"):
             text, conf = simple_ocr_enhanced(region_img, preprocess_method)
             
             print(f"[REGION OCR] y1={y1}, y2={y2}, method={preprocess_method}: '{text}' (conf: {conf:.2%})")
@@ -1419,7 +1522,7 @@ def read_township_from_region(plate_img, region_code):
     for y1, y2 in areas:
         top_part = plate_img[y1:y2, :]
         
-        for preprocess_method in ["standard", "enhance", "sharpen"]:
+        for preprocess_method in get_ocr_preprocess_methods("township"):
             text, conf = simple_ocr_enhanced(top_part, preprocess_method)
             text_upper = text.upper().strip()
             print(f"[TOWNSHIP OCR DETAIL] y1={y1}, y2={y2}, method={preprocess_method}: '{text_upper}' (conf: {conf:.2%})")
@@ -1502,26 +1605,40 @@ def read_township_from_region(plate_img, region_code):
 def read_bottom_text(plate_img):
     """Read bottom text from license plate - reads entire bottom area"""
     h, w = plate_img.shape[:2]
-    
-    y1 = int(h * 0.50)
-    bottom = plate_img[y1:h, :]
-    
-    text, conf = simple_ocr_enhanced(bottom, "enhance")
-    
-    cleaned = re.sub(r'[^A-Z0-9\s]', '', text.upper())
-    
-    if len(cleaned) < 3:
-        y1_alt = int(h * 0.65)
-        bottom_alt = plate_img[y1_alt:h, :]
-        text_alt, conf_alt = simple_ocr_enhanced(bottom_alt, "enhance")
-        cleaned_alt = re.sub(r'[^A-Z0-9\s]', '', text_alt.upper())
-        if len(cleaned_alt) > len(cleaned):
-            cleaned = cleaned_alt
-            conf = conf_alt
-    
-    print(f"[BOTTOM TEXT OCR] Raw: '{text}', Cleaned: '{cleaned}', Conf: {conf:.2%}")
-    
-    return cleaned, conf
+
+    search_windows = [
+        (0.48, 1.00),
+        (0.55, 1.00),
+        (0.62, 1.00),
+    ]
+    methods = get_ocr_preprocess_methods("bottom")
+    best_text = ""
+    best_conf = 0.0
+
+    for y1_ratio, y2_ratio in search_windows:
+        bottom = plate_img[int(h * y1_ratio):int(h * y2_ratio), :]
+        if bottom.size == 0:
+            continue
+        for method in methods:
+            for text, conf in get_ocr_candidates(bottom, method):
+                cleaned = re.sub(r'[^A-Z0-9\s]', '', text.upper()).strip()
+                if not cleaned:
+                    continue
+                alpha_count = len(re.findall(r"[A-Z]", cleaned))
+                digit_count = len(re.findall(r"\d", cleaned))
+                score = float(conf)
+                if alpha_count >= 3:
+                    score += 0.08
+                if 2 <= len(cleaned) <= 30:
+                    score += 0.03
+                if digit_count == 0:
+                    score += 0.02
+                if score > best_conf and (alpha_count >= 3 or len(cleaned) >= 4):
+                    best_text = cleaned
+                    best_conf = min(score, 0.99)
+
+    print(f"[BOTTOM TEXT OCR] Cleaned: '{best_text}', Conf: {best_conf:.2%}")
+    return best_text, best_conf
 
 def get_vehicle_type(plate_number, plate_color, bottom_text=""):
     plate_number = plate_number or ""

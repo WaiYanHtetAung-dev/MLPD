@@ -10,6 +10,9 @@ let detectionInProgress = false;
 let imagePreviewUrl = null;
 let videoPreviewUrl = null;
 let currentUploadController = null;
+let browserStream = null;
+let browserCaptureFile = null;
+let browserCaptureUrl = null;
 const seenEventKeys = new Set();
 let rawLogEntries = [];
 let healthTimer = null;
@@ -31,6 +34,37 @@ const defaultSettings = {
 let appSettings = { ...defaultSettings };
 
 const $ = id => document.getElementById(id);
+
+function deviceCameraIsSecure() {
+    return Boolean(window.isSecureContext && navigator.mediaDevices?.getUserMedia);
+}
+
+function updateWebcamStartLabel() {
+    if (!$("startBtn")) return;
+    const secure = deviceCameraIsSecure();
+    $("startBtn").textContent = secure ? "Start live view" : "Capture photo";
+    $("startBtn").title = secure
+        ? "Open this device camera as a live stream"
+        : "Use the device camera snapshot fallback for HTTP/LAN access";
+}
+
+function clearBrowserCapture() {
+    if (browserCaptureUrl) URL.revokeObjectURL(browserCaptureUrl);
+    browserCaptureUrl = null;
+    browserCaptureFile = null;
+    if ($("deviceCameraInput")) $("deviceCameraInput").value = "";
+}
+
+function clearBrowserStream() {
+    if (browserStream) {
+        browserStream.getTracks().forEach(track => track.stop());
+        browserStream = null;
+    }
+    $("videoPreview").srcObject = null;
+    $("videoPreview").removeAttribute("src");
+    $("videoPreview").controls = true;
+    $("videoPreview").style.display = "none";
+}
 
 function escapeHtml(value) {
     return String(value ?? "-").replace(/[&<>"']/g, char => ({
@@ -172,10 +206,12 @@ function displayTownship(data = {}) {
 
 function displayModel(data = {}) {
     const model = data.model || data.car_model || "-";
-    const bottom = data.bottom_text_ocr || data.bottom_text_raw || "-";
     if (!model || model === "-") return "-";
-    if (bottom && bottom !== "-" && String(model).trim().toUpperCase() === String(bottom).trim().toUpperCase()) return "-";
-    return model;
+    const bottom = data.bottom_text_ocr || data.bottom_text_raw || "";
+    const bottomText = String(bottom).trim();
+    if (!bottomText) return model;
+    const normalizedModel = String(model).trim();
+    return normalizedModel;
 }
 
 function updateEventStats(stats = {}) {
@@ -307,8 +343,14 @@ function setResultState(status = "") {
 }
 
 function updateDetectButtonState() {
-    const fileSelected = currentMode === "video" ? Boolean(selectedVideoFile) : Boolean(selectedImageFile);
-    $("detectBtn").disabled = detectionInProgress || !fileSelected;
+    const ready = currentMode === "video"
+        ? Boolean(selectedVideoFile)
+        : currentMode === "image"
+            ? Boolean(selectedImageFile)
+            : currentMode === "webcam"
+                ? Boolean(browserStream || browserCaptureFile)
+                : false;
+    $("detectBtn").disabled = detectionInProgress || !ready;
     $("detectBtn").textContent = detectionInProgress ? "Detecting..." : "Run detection";
     $("stopBtn").disabled = ["video", "image"].includes(currentMode) ? !detectionInProgress : false;
 }
@@ -339,7 +381,7 @@ function applyOrientationPreview() {
 
 function applyCameraOrientation() {
     applyOrientationPreview();
-    if (!streamEnabled || !["webcam", "camera"].includes(currentMode)) return;
+    if (!streamEnabled || currentMode !== "camera") return;
     cameraRequest("/camera/settings", 0, "Orientation").then(data => {
         showStatus(data.message);
     }).catch(error => showStatus(error.message || "Unable to apply rotation settings", "error"));
@@ -369,6 +411,11 @@ function setAppView(view) {
 }
 
 function setMode(mode) {
+    if (currentMode === "webcam" && mode !== "webcam") stopBrowserCamera();
+    if (currentMode === "camera" && mode !== "camera" && streamEnabled) {
+        cameraRequest("/camera/stop", 0, "Network Camera").catch(() => {});
+        setLiveStream(false);
+    }
     currentMode = mode;
     if (appSettings.rememberMode) {
         localStorage.setItem("mlpd.lastMode", mode);
@@ -380,22 +427,25 @@ function setMode(mode) {
     $("settingsBox").style.display = "flex";
     $("startBtn").style.display = mode === "webcam" ? "inline-block" : "none";
     $("stopBtn").style.display = ["webcam", "video", "image"].includes(mode) ? "inline-block" : "none";
-    $("detectBtn").style.display = ["video", "image"].includes(mode) ? "inline-block" : "none";
+    $("detectBtn").style.display = ["webcam", "video", "image"].includes(mode) ? "inline-block" : "none";
     $("connectCameraBtn").style.display = mode === "camera" ? "inline-block" : "none";
     $("disconnectCameraBtn").style.display = mode === "camera" ? "inline-block" : "none";
 
     const labels = {
-        webcam: ["Front Gate", "Camera standing by"],
+        webcam: ["Device Camera", "Camera standing by"],
         video: ["Video Review", "Choose a video to begin"],
         image: ["Image File", "Choose an image to begin"],
         camera: ["Network Camera", "Enter a network camera URL"]
     };
     $("feedTitle").textContent = labels[mode][0];
-    showStatus(labels[mode][1]);
+    showStatus(mode === "webcam" && !deviceCameraIsSecure()
+        ? "Camera standing by. This connection will use a camera snapshot fallback."
+        : labels[mode][1]);
     if (mode !== "webcam") setLiveStream(false);
     $("imagePreview").style.display = mode === "image" && selectedImageFile ? "block" : "none";
     $("videoPreview").style.display = mode === "video" && selectedVideoFile ? "block" : "none";
     if ((mode === "image" && selectedImageFile) || (mode === "video" && selectedVideoFile)) $("placeholderBox").style.display = "none";
+    updateWebcamStartLabel();
     updateDetectButtonState();
 }
 
@@ -420,6 +470,78 @@ function setLiveStream(active) {
         $("cameraStatusIcon").classList.remove("online");
         streamEnabled = false;
     }
+}
+
+function stopBrowserCamera() {
+    clearBrowserStream();
+    clearBrowserCapture();
+    $("videoPreview").srcObject = null;
+    $("videoPreview").removeAttribute("src");
+    $("videoPreview").controls = true;
+    $("videoPreview").style.display = "none";
+    if (currentMode === "webcam") {
+        streamEnabled = false;
+        $("placeholderBox").style.display = "grid";
+        $("feedPreview").classList.remove("active");
+        $("cameraStatus").textContent = "Standby";
+        $("cameraStatusIcon").classList.remove("online");
+        $("imagePreview").style.display = "none";
+        updateDetectButtonState();
+        updateWebcamStartLabel();
+    }
+}
+
+async function startBrowserCamera() {
+    updateWebcamStartLabel();
+    if (!deviceCameraIsSecure()) {
+        clearBrowserCapture();
+        $("deviceCameraInput").value = "";
+        showStatus("Choose a photo from this device camera.");
+        $("deviceCameraInput").click();
+        return false;
+    }
+    clearBrowserCapture();
+    clearBrowserStream();
+    const stream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: "environment", width: { ideal: 1280 }, height: { ideal: 720 } },
+        audio: false
+    });
+    browserStream = stream;
+    $("videoFeed").src = "";
+    $("videoFeed").style.display = "none";
+    $("imagePreview").style.display = "none";
+    $("videoPreview").srcObject = stream;
+    $("videoPreview").controls = false;
+    $("videoPreview").muted = true;
+    $("videoPreview").playsInline = true;
+    $("videoPreview").style.display = "block";
+    await $("videoPreview").play();
+    applyOrientationPreview();
+    $("placeholderBox").style.display = "none";
+    $("feedPreview").classList.add("active");
+    $("cameraStatus").textContent = "Device live";
+    $("cameraStatusIcon").classList.add("online");
+    streamEnabled = true;
+    updateDetectButtonState();
+    return true;
+}
+
+function browserFrameToFile() {
+    const video = $("videoPreview");
+    if (!browserStream || !video.videoWidth || !video.videoHeight) {
+        throw new Error("Camera frame is not ready yet.");
+    }
+    const canvas = document.createElement("canvas");
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    const context = canvas.getContext("2d");
+    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+    return new Promise((resolve, reject) => {
+        canvas.toBlob(blob => {
+            if (!blob) reject(new Error("Unable to capture camera frame."));
+            else resolve(new File([blob], `device-camera-${Date.now()}.jpg`, { type: "image/jpeg" }));
+        }, "image/jpeg", 0.92);
+    });
 }
 
 function cameraRequest(path, source, label) {
@@ -480,6 +602,7 @@ function handleUploadResult(data, mode) {
 }
 
 function detectCurrentFile() {
+    if (currentMode === "webcam") return detectBrowserCameraFrame();
     const file = currentMode === "video" ? selectedVideoFile : selectedImageFile;
     if (!file) return showStatus(`Choose an ${currentMode === "video" ? "video" : "image"} first`);
     if (detectionInProgress) return;
@@ -496,19 +619,52 @@ function detectCurrentFile() {
         .finally(() => { currentUploadController = null; setDetectionBusy(false); });
 }
 
+async function detectBrowserCameraFrame() {
+    if (!browserStream && !browserCaptureFile) return showStatus("Start the device camera first");
+    if (detectionInProgress) return;
+    currentUploadController = new AbortController();
+    setDetectionBusy(true);
+    try {
+        let file;
+        if (browserStream) {
+            showStatus("Capturing device camera frame...");
+            file = await browserFrameToFile();
+        } else {
+            showStatus("Uploading camera snapshot...");
+            file = browserCaptureFile;
+        }
+        showStatus("Detecting plate from device camera...");
+        const data = await uploadFile("/upload_image", "image", file, currentUploadController.signal);
+        handleUploadResult(data, "Live Camera");
+    } catch (error) {
+        if (error.name === "AbortError") showStatus("Detection stopped");
+        else { setResultState("Fail"); showStatus(error.message || "Camera detection failed", "error"); }
+    } finally {
+        currentUploadController = null;
+        setDetectionBusy(false);
+    }
+}
+
 function attachEvents() {
     document.querySelectorAll(".nav-item[data-view]").forEach(item => item.addEventListener("click", () => setAppView(item.dataset.view)));
     ["Webcam", "Video", "Image", "Camera"].forEach(name => $("tab" + name).addEventListener("click", () => setMode(name.toLowerCase())));
     $("startBtn").addEventListener("click", () => {
-        showStatus("Connecting local camera...");
-        cameraRequest("/camera/start", 0, "Live Camera").then(data => {
-            setLiveStream(true); showStatus(data.message);
-        }).catch(error => { setLiveStream(false); showStatus(error.message); });
+        showStatus("Opening this device camera...");
+        startBrowserCamera()
+            .then(live => {
+                if (live) showStatus("Device camera is live. Run detection when a plate is visible.");
+            })
+            .catch(error => { stopBrowserCamera(); showStatus(error.message || "Unable to open device camera", "error"); });
     });
     $("stopBtn").addEventListener("click", () => {
         if (["video", "image"].includes(currentMode)) {
             if (currentUploadController) currentUploadController.abort();
             else showStatus("No file detection is running");
+            return;
+        }
+        if (currentMode === "webcam") {
+            stopBrowserCamera();
+            showStatus("Device camera stopped");
             return;
         }
         cameraRequest("/camera/stop", 0, "Live Camera").then(data => {
@@ -522,6 +678,30 @@ function attachEvents() {
     $("uploadImageBtn").addEventListener("click", () => {
         $("imageInput").value = "";
         $("imageInput").click();
+    });
+    $("deviceCameraInput").addEventListener("change", event => {
+        const file = event.target.files?.[0];
+        if (!file) {
+            showStatus("No camera snapshot selected");
+            return;
+        }
+        clearBrowserStream();
+        clearBrowserCapture();
+        browserCaptureFile = file;
+        browserCaptureUrl = URL.createObjectURL(file);
+        $("imagePreview").src = browserCaptureUrl;
+        $("imagePreview").style.display = "block";
+        $("videoPreview").style.display = "none";
+        $("videoFeed").style.display = "none";
+        $("placeholderBox").style.display = "none";
+        $("feedPreview").classList.add("active");
+        $("cameraStatus").textContent = "Snapshot ready";
+        $("cameraStatusIcon").classList.add("online");
+        streamEnabled = true;
+        applyOrientationPreview();
+        setResultState();
+        showStatus("Device camera snapshot ready. Run detection when the plate is visible.");
+        updateDetectButtonState();
     });
     $("detectBtn").addEventListener("click", detectCurrentFile);
     $("rotationSelect").addEventListener("change", applyCameraOrientation);
@@ -604,9 +784,12 @@ function attachEvents() {
     $("videoInput").addEventListener("change", event => {
         selectedVideoFile = event.target.files[0];
         if (!selectedVideoFile) return;
+        stopBrowserCamera();
         $("videoFileName").textContent = selectedVideoFile.name;
         if (videoPreviewUrl) URL.revokeObjectURL(videoPreviewUrl);
         videoPreviewUrl = URL.createObjectURL(selectedVideoFile);
+        $("videoPreview").srcObject = null;
+        $("videoPreview").controls = true;
         $("videoPreview").src = videoPreviewUrl;
         $("videoPreview").style.display = "block";
         $("imagePreview").style.display = "none";
@@ -626,8 +809,13 @@ function checkHealth() {
         $("serverStatusText").textContent = "Online";
         $("serverStatusIcon").classList.add("online");
         $("ocrStatus").textContent = data.ocr_engine || "Unavailable";
-        $("cameraStatus").textContent = data.camera_ready ? "Connected" : "Standby";
-        $("cameraStatusIcon").classList.toggle("online", data.camera_ready);
+        if (currentMode === "webcam" && (browserStream || browserCaptureFile)) {
+            $("cameraStatus").textContent = browserStream ? "Device live" : "Snapshot ready";
+            $("cameraStatusIcon").classList.add("online");
+        } else {
+            $("cameraStatus").textContent = data.camera_ready ? "Connected" : "Standby";
+            $("cameraStatusIcon").classList.toggle("online", data.camera_ready);
+        }
         $("trackingCount").textContent = `${data.active_tracks || 0} tracks / ${data.recognized_tracks || 0} read`;
         if ($("settingsBackendState")) $("settingsBackendState").textContent = "Online";
         if ($("settingsOcrState")) $("settingsOcrState").textContent = data.ocr_engine || "Unavailable";
@@ -814,6 +1002,7 @@ function loadCaptures() {
 window.addEventListener("DOMContentLoaded", () => {
     loadSettings();
     applySettings();
+    updateWebcamStartLabel();
     attachEvents();
     updateClock();
     setInterval(updateClock, 1000);

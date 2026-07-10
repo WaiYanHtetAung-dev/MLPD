@@ -19,7 +19,7 @@ DB_FILE = "mlpd_events.sqlite"
 DB_FOLDER = "data"
 DB_PATH = os.path.join(BASE_DIR, DB_FOLDER, DB_FILE)
 OCR_ENGINE = "easyocr" if engine.OCR_AVAILABLE == "easyocr" else ("paddle" if engine.OCR_AVAILABLE else None)
-MODEL_MATCH_THRESHOLD = 0.55
+MODEL_MATCH_THRESHOLD = 0.45
 
 lock = threading.RLock()
 db_lock = threading.RLock()
@@ -43,7 +43,7 @@ next_track_id = 1
 tracking_worker_started = False
 latest_data = {
     "region": "-", "township": "-", "number": "-", "color": "-",
-    "type": "-", "model": "-", "confidence": 0, "capture_url": None,
+    "type": "-", "model": "-", "model_confidence": 0, "confidence": 0, "capture_url": None,
     "timestamp": None, "source": "-", "status": "-", "complete": False, "missing_fields": []
 }
 
@@ -107,12 +107,29 @@ def _safe_json_loads(value, default):
         return default
 
 
+def resolve_capture_path(capture_path="", capture_file=""):
+    if capture_path and os.path.exists(capture_path):
+        return capture_path
+    if capture_file:
+        local_path = os.path.join(BASE_DIR, SAVE_FOLDER, os.path.basename(capture_file.replace("\\", "/")))
+        if os.path.exists(local_path):
+            return local_path
+    return ""
+
+
+def capture_url_for_file(capture_file="", capture_path=""):
+    file_name = os.path.basename((capture_file or capture_path or "").replace("\\", "/"))
+    if not file_name:
+        return None
+    return f"/plate_captures/{file_name}" if resolve_capture_path(capture_path, file_name) else None
+
+
 def save_detection_event(event):
     init_db()
     missing_fields = event.get("missing_fields") or []
     capture_path = event.get("capture_path") or ""
     capture_file = event.get("capture_file") or os.path.basename(capture_path.replace("\\", "/"))
-    capture_url = event.get("capture_url") or (f"/plate_captures/{capture_file}" if capture_file else None)
+    capture_url = event.get("capture_url") or capture_url_for_file(capture_file, capture_path)
     vehicle_type = event.get("vehicle_type") or event.get("type") or "-"
     complete = 1 if event.get("complete") else 0
     payload = {
@@ -186,7 +203,7 @@ def normalize_bottom_ocr_and_model(bottom_text, stored_model="-", allow_match=Tr
         return _dedupe_bottom_ocr_text(raw_bottom), "-", 0
 
     matched_model, match_conf, _ = engine.match_car_model_fuzzy(raw_bottom)
-    if matched_model and match_conf >= MODEL_MATCH_THRESHOLD:
+    if matched_model:
         return matched_model, matched_model, match_conf
 
     model = stored_model if stored_model and stored_model != "-" else "-"
@@ -199,7 +216,9 @@ def detection_row_to_event(row):
     missing_fields = _safe_json_loads(row["missing_fields_json"], [])
     raw = _safe_json_loads(row["raw_json"], {})
     vehicle_type = row["vehicle_type"] or raw.get("type") or "-"
-    capture_url = row["capture_url"] or (f"/plate_captures/{row['capture_file']}" if row["capture_file"] else None)
+    capture_file = row["capture_file"] or os.path.basename((row["capture_path"] or "").replace("\\", "/"))
+    capture_path = resolve_capture_path(row["capture_path"] or "", capture_file)
+    capture_url = capture_url_for_file(capture_file, capture_path)
     bottom_text_ocr, model, _ = normalize_bottom_ocr_and_model(row["bottom_text_raw"], row["model"], allow_match=False)
     event = {
         "id": row["id"],
@@ -224,9 +243,9 @@ def detection_row_to_event(row):
         "detection_confidence": float(row["detection_confidence"] or 0),
         "processing_ms": int(row["processing_ms"] or 0),
         "missing_fields": missing_fields,
-        "capture_file": row["capture_file"],
-        "capture_path": row["capture_path"],
-        "file": row["capture_path"] or "",
+        "capture_file": capture_file,
+        "capture_path": capture_path,
+        "file": capture_path,
         "capture_url": capture_url,
         "recorded": True,
     }
@@ -265,6 +284,8 @@ def get_capture_items(limit=500):
     for row in rows:
         event = detection_row_to_event(row)
         capture_path = event.get("capture_path") or ""
+        if not event.get("capture_url"):
+            continue
         size_kb = 0
         if capture_path and os.path.exists(capture_path):
             size_kb = max(1, round(os.path.getsize(capture_path) / 1024))
@@ -684,10 +705,32 @@ def process_plate_crop(
             region, region_conf, township, township_conf,
             main_number, main_conf, bottom_text, bottom_conf,
         ) = preparsed
+    if not region:
+        try:
+            region, region_conf = engine.read_region_code(plate_crop)
+        except Exception:
+            region, region_conf = "", 0
+    if region and not township:
+        try:
+            township, township_conf = engine.read_township_from_region(plate_crop, region)
+        except Exception:
+            township, township_conf = "", 0
     color, color_conf = detect_plate_color(plate_crop, bottom_text, main_number)
     main_number = engine.normalize_number_for_plate_color(main_number, color)
     bottom_text_display, matched_model, match_conf = normalize_bottom_ocr_and_model(bottom_text)
-    model = matched_model if matched_model and matched_model != "-" and match_conf >= MODEL_MATCH_THRESHOLD else "-"
+
+    if (not matched_model or matched_model == "-") and plate_crop is not None:
+        try:
+            fallback_bottom, fallback_bottom_conf = engine.read_bottom_text(plate_crop)
+        except Exception:
+            fallback_bottom, fallback_bottom_conf = "", 0
+        fallback_model, fallback_model_conf, _ = engine.match_car_model_fuzzy(fallback_bottom)
+        if fallback_model:
+            bottom_text_display = fallback_bottom or bottom_text_display
+            matched_model = fallback_model
+            match_conf = max(match_conf, fallback_model_conf, fallback_bottom_conf)
+
+    model = matched_model if matched_model and matched_model != "-" else "-"
     township_name = engine.get_township_name(region, township)
     region_display = engine.format_region_display(region, township)
     vehicle_type = engine.get_vehicle_type(main_number, color, bottom_text)
@@ -699,6 +742,7 @@ def process_plate_crop(
         "bottom_text_ocr": bottom_text_display,
         "color": color or "-", "type": vehicle_type or "-", "vehicle_type": vehicle_type or "-",
         "model": model or "-", "car_model": model or "-", "display": number,
+        "model_confidence": round(float(match_conf), 3),
     }
     missing_fields = get_missing_result_fields(plate_data)
     plate_data["complete"] = not missing_fields
@@ -736,6 +780,7 @@ def process_plate_crop(
         "bottom_text_raw": plate_data["bottom_text_raw"],
         "bottom_text_ocr": plate_data["bottom_text_ocr"],
         "display": plate_data["display"],
+        "model_confidence": plate_data["model_confidence"],
         "recorded": True,
     }
     try:

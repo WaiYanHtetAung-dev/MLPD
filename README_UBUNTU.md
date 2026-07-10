@@ -1,12 +1,19 @@
-# MLPD Ubuntu Deployment
+# MLPD Ubuntu Deployment Guide
 
-Target server:
+This guide is for running the project on your own Ubuntu server.
 
-```text
-ubuntu@52.76.141.146
-```
+## Before You Start
 
-Remote project folder:
+Update these placeholders to match your environment:
+
+- `YOUR_SERVER_IP`
+- `YOUR_SERVER_USER`
+- `YOUR_REMOTE_DIR`
+- `YOUR_PUBLIC_HOST`
+- `YOUR_SSL_CERTFILE`
+- `YOUR_SSL_KEYFILE`
+
+Recommended remote folder:
 
 ```text
 /home/ubuntu/MLPD_ubuntu
@@ -14,31 +21,32 @@ Remote project folder:
 
 ## Upload From Windows
 
-This Ubuntu deployment package now includes the same supporting rule files and static assets used by the main MLPD project so the app can run with the expected configuration.
-
-From PowerShell in this folder:
+The helper script is the easiest way to sync the project:
 
 ```powershell
 .\deploy_to_ubuntu.ps1
 ```
 
-Or manually:
+If you want to run it manually, replace the placeholders first:
 
 ```powershell
-ssh ubuntu@52.76.141.146 "mkdir -p /home/ubuntu/MLPD_ubuntu"
-scp -r .paddlex captures color_classifier data static *.py *.txt *.pt *.html *.sh *.ps1 requirements*.txt README_UBUNTU.md ubuntu@52.76.141.146:/home/ubuntu/MLPD_ubuntu/
+ssh YOUR_SERVER_USER@YOUR_SERVER_IP "mkdir -p /home/ubuntu/MLPD_ubuntu"
+scp -r .paddlex captures color_classifier data static *.py *.txt *.pt *.html *.sh *.ps1 requirements*.txt README*.md YOUR_SERVER_USER@YOUR_SERVER_IP:/home/ubuntu/MLPD_ubuntu/
 ```
 
-## Setup On Ubuntu
+## Ubuntu Setup
+
+On the server:
 
 ```bash
-ssh ubuntu@52.76.141.146
+ssh YOUR_SERVER_USER@YOUR_SERVER_IP
 cd /home/ubuntu/MLPD_ubuntu
 chmod +x setup_ubuntu.sh start.sh stop.sh logs.sh
 ./setup_ubuntu.sh
 ```
 
-If setup was attempted before this package update, rebuild the virtualenv:
+If you already tried setup before a dependency change, rebuild the local
+virtual environment:
 
 ```bash
 ./stop.sh
@@ -46,15 +54,18 @@ rm -rf .venv
 ./setup_ubuntu.sh
 ```
 
-Note: Ubuntu 26.04 uses Python 3.14 by default, but `paddlepaddle` wheels are
-not available for Python 3.14. `setup_ubuntu.sh` installs `uv`, creates a
-project-local Python 3.12 `.venv`, then installs PaddleOCR/PaddlePaddle there.
-It also installs CPU-only PyTorch to avoid downloading large CUDA packages on
-small Ubuntu servers.
-It also installs Ubuntu system libraries required by OpenCV and the legacy
-Tkinter UI imports used by the shared LPR engine.
+## What The Setup Script Does
+
+- Installs system packages needed by OpenCV and Tkinter
+- Installs `uv` if needed
+- Creates a project-local Python 3.12 `.venv`
+- Installs PyTorch CPU wheels
+- Installs the project requirements
+- Verifies PaddleOCR and PaddlePaddle imports
 
 ## Run
+
+Start the app:
 
 ```bash
 ./start.sh
@@ -72,22 +83,82 @@ Use another port:
 PORT=8001 ./start.sh
 ```
 
-## Logs
+If you want the browser URL to show your public host, override it:
 
 ```bash
-./logs.sh -f
-./logs.sh -e -f
+PUBLIC_HOST=YOUR_PUBLIC_HOST ./start.sh
 ```
 
-## Stop
+## Browser Access
+
+Local access:
+
+```text
+http://127.0.0.1:8000
+```
+
+Public access example:
+
+```text
+http://YOUR_SERVER_IP:8000
+```
+
+If you enable TLS:
 
 ```bash
-./stop.sh
+SSL_CERTFILE=/path/to/fullchain.pem SSL_KEYFILE=/path/to/privkey.pem ./start.sh
 ```
 
-## Optional: Run as a systemd Service
+## Helper Scripts
 
-After the first setup, you can install the service file:
+- `open_browser.ps1` opens the dashboard URL
+- `deploy_to_ubuntu.ps1` syncs the repo and starts the server remotely
+- `logs.sh` and `stop.sh` manage the service on Ubuntu
+
+Set your browser URL like this:
+
+```powershell
+$env:MLPD_URL = "http://YOUR_SERVER_IP:8000"
+.\open_browser.ps1
+```
+
+## Paddle OCR Speed Tuning
+
+The app prefers PaddleOCR when available.
+
+Useful overrides:
+
+```bash
+MLPD_USE_PADDLE_OCR=1
+MLPD_PADDLE_FAST_MODE=1
+MLPD_PADDLE_DET_MODEL_NAME=PP-OCRv5_server_det
+MLPD_PADDLE_REC_MODEL_NAME=en_PP-OCRv5_mobile_rec
+```
+
+Notes:
+
+- CPU-only servers benefit most from `MLPD_PADDLE_FAST_MODE=1`
+- If you later add a lighter detector model under `.paddlex/official_models/`,
+  set `MLPD_PADDLE_DET_MODEL_NAME` to that folder name
+- If Paddle fails to import, the app falls back to EasyOCR
+
+## Logs And Data
+
+- `captures/` stores plate crops
+- `data/` stores the SQLite database
+- `detection_log.txt` stores text logs
+- `server.log` and `server-error.log` store runtime output
+
+## Troubleshooting
+
+- If the app does not start, check `server-error.log`
+- If OCR is slow, confirm Paddle is being used in the logs
+- If browser access fails, make sure the port is open in your firewall
+- If you change Python versions, rebuild `.venv`
+
+## Systemd
+
+Optional service install:
 
 ```bash
 sudo cp mlpd.service /etc/systemd/system/mlpd.service
@@ -96,16 +167,9 @@ sudo systemctl enable --now mlpd
 sudo systemctl status mlpd
 ```
 
-## Open In Browser
+## Related Files
 
-```text
-http://52.76.141.146:8000
-```
-
-Make sure the Ubuntu server firewall/security group allows inbound TCP `8000`.
-
-From Windows PowerShell:
-
-```powershell
-.\open_browser.ps1
-```
+- [README.md](README.md)
+- [setup_ubuntu.sh](setup_ubuntu.sh)
+- [start.sh](start.sh)
+- [deploy_to_ubuntu.ps1](deploy_to_ubuntu.ps1)

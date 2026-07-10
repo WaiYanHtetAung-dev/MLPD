@@ -303,4 +303,13 @@ async def upload_video(
 if __name__ == "__main__":
     # Run with: python server.py OR: uvicorn server:app --host 0.0.0.0 --port 8000
     port = int(os.environ.get("PORT", "8000"))
-    uvicorn.run("server:app", host="0.0.0.0", port=port, reload=False)
+    ssl_certfile = os.environ.get("SSL_CERTFILE")
+    ssl_keyfile = os.environ.get("SSL_KEYFILE")
+    uvicorn.run(
+        "server:app",
+        host="0.0.0.0",
+        port=port,
+        reload=False,
+        ssl_certfile=ssl_certfile if ssl_certfile and ssl_keyfile else None,
+        ssl_keyfile=ssl_keyfile if ssl_certfile and ssl_keyfile else None,
+    )
