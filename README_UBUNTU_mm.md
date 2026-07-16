@@ -120,7 +120,7 @@ https://YOUR_SERVER_IP:8000
 - `deploy_to_ubuntu.ps1` — repo ကို sync လုပ်ပြီး remote က server ကို စတင်ပေးတယ်
 - `logs.sh` နဲ့ `stop.sh` — Ubuntu မှာ service ကို စီမံခန့်ခွဲဖို့
 
-browser URL ကို 이렇게 သတ်မှတ်နိုင်သည် —
+browser URL ကို သတ်မှတ်နိုင်သည် —
 
 ```powershell
 $env:MLPD_URL = "http://YOUR_SERVER_IP:8000"
