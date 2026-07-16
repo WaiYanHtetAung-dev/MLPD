@@ -54,7 +54,8 @@ http://127.0.0.1:8000
 3. Run `./setup_ubuntu.sh` once.
 4. Start the app with `./start.sh`.
 
-For full deployment notes, read [README_UBUNTU.md](README_UBUNTU.md).
+For full deployment notes, 
+read [README_UBUNTU.md(English)](README_UBUNTU.md) & [README_UBUNTU_mm.md(Myanmar)](README_UBUNTU_mm.md).
 
 ## Deployment Placeholders
 
