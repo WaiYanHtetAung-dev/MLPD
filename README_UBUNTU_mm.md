@@ -1,42 +1,42 @@
-# MLPD Ubuntu ဖြန့်ချိခြင်း လမ်းညွှန် (မြန်မာဘာသာ)
+# MLPD Ubuntu ဖြန့်ချိခြင်း လမ်းညွှန် (မြန်မာ)
 
-ဒီလမ်းညွှန်ကတော့ ကိုယ့်ရဲ့ Ubuntu ဆာဗာပေါ်မှာ project ကို တင်ပြီး chạy ဖို့ အသုံးပြုနိုင်ပါတယ်။
+ဒီလမ်းညွှန်ကို Ubuntu ဆာဗာပေါ်မှာ MLPD project ကို စတင်အသုံးပြုရန် အသေးစိတ် ရေးသားထားတာပါ။
 
-## စတင်မတိုင်မီ
+## ၁။ စတင်မတိုင်မီ
 
-အောက်က placeholder တွေကို သင့်ပတ်ဝန်းကျင်နှင့် ကိုက်ညီအောင် ပြင်ပါ —
+မိမိဆာဗာပတ်ဝန်းကျင်အတွက် အောက်ပါ placeholder တွေကို ပြင်ဆင်ပါ။
 
-- `YOUR_SERVER_IP`
-- `YOUR_SERVER_USER`
-- `YOUR_REMOTE_DIR`
-- `YOUR_PUBLIC_HOST`
-- `YOUR_SSL_CERTFILE`
-- `YOUR_SSL_KEYFILE`
+- `YOUR_SERVER_IP` — ဆာဗာ IP
+- `YOUR_SERVER_USER` — ဆာဗာ user name
+- `YOUR_REMOTE_DIR` — remote ဒိုင်ရက်ထရီ
+- `YOUR_PUBLIC_HOST` — public browser URL အတွက် host
+- `YOUR_SSL_CERTFILE` — SSL certificate ဖိုင်လမ်းကြောင်း
+- `YOUR_SSL_KEYFILE` — SSL private key ဖိုင်လမ်းကြောင်း
 
-အကြံပြုထားတဲ့ remote ဖိုလ်ဒါ
+အကြံပြု remote ဖိုလ်ဒါ
 
 ```text
 /home/ubuntu/MLPD_ubuntu
 ```
 
-## Windows ကနေ Upload ချင်ရင်
+## ၂။ Windows ကနေ Ubuntu သို့ Upload လုပ်ခြင်း
 
-helper script ကို အသုံးပြုရင် အလွယ်ဆုံးပါ —
+အရင်ဆုံး repo ကို Windows မှာ sync လုပ်ချင်ရင် helper script ကို အသုံးပြုပါ။
 
 ```powershell
 .\deploy_to_ubuntu.ps1
 ```
 
-ဖိုင်တွေကို သင်မစေ့ဝင်ဘဲ ကိုယ့်ဆီမှာ manual ဖြင့် ကူးပို့ချင်ရင် placeholder တွေကို အစားထိုးပြီး ဒီလို run ပါ —
+manual copy လုပ်ချင်ရင် placeholder တွေကို အစားထိုးပြီး ဒီ command ကို သုံးပါ။
 
 ```powershell
 ssh YOUR_SERVER_USER@YOUR_SERVER_IP "mkdir -p /home/ubuntu/MLPD_ubuntu"
 scp -r .paddlex captures color_classifier data static *.py *.txt *.pt *.html *.sh *.ps1 requirements*.txt README*.md YOUR_SERVER_USER@YOUR_SERVER_IP:/home/ubuntu/MLPD_ubuntu/
 ```
 
-## Ubuntu ပေါ်မှာ Setup ပြုလုပ်နည်း
+## ၃။ Ubuntu ပေါ်တွင် Setup ပြုလုပ်ခြင်း
 
-ဆာဗာပေါ်သို့ဝင်ပြီး ဒီအတိုင်းလုပ်ပါ —
+ဆာဗာထဲ ဝင်ပြီး အောက်ပါ commands ကို run ပါ။
 
 ```bash
 ssh YOUR_SERVER_USER@YOUR_SERVER_IP
@@ -45,7 +45,10 @@ chmod +x setup_ubuntu.sh start.sh stop.sh logs.sh
 ./setup_ubuntu.sh
 ```
 
-dependency ပြောင်းလဲမှုတစ်ခုခုကြောင့် ဖန်တီးမှုကို အရင်တင်ထားခဲ့ပြီးသားဖြစ်ပါက local virtual environment ကို ပြန်လုပ်ရန် —
+### အရေးကြီး
+
+- တစ်ခါတည်း setup ပြီးပြီဆို `.venv` ဖိုလ်ဒါလည်း ဖန်တီးပြီးသားဖြစ်ပါတယ်။
+- dependency ပြောင်းလဲမှုများ ရှိလျှင် အောက်ပါအတိုင်း `.venv` ကို ပြန်လုပ်ပါ။
 
 ```bash
 ./stop.sh
@@ -53,85 +56,79 @@ rm -rf .venv
 ./setup_ubuntu.sh
 ```
 
-## setup script က ဘာတွေလုပ်သလဲ
+## ၄။ setup script က ဘာလုပ်သလဲ
 
-- OpenCV နဲ့ Tkinter များအတွက် လိုအပ်တဲ့ system packages များ install လုပ်သည်
-- `uv` ကို လိုအပ်လျှင် install လုပ်သည်
+- OpenCV နဲ့ Tkinter လို system packages များ install လုပ်သည်
+- `uv` command လိုအပ်လျှင် install လုပ်သည်
 - Python 3.12 အတွက် project-local `.venv` ဖန်တီးသည်
 - PyTorch CPU wheel များ install လုပ်သည်
 - project requirements များ install လုပ်သည်
-- PaddleOCR နှင့် PaddlePaddle import စစ်ဆေးသည်
+- PaddleOCR နဲ့ PaddlePaddle imports ကို စစ်ဆေးသည်
 
-## Run (စတင်အသုံးပြုနည်း)
-
-app ကို စတင်ရန် —
+## ၅။ app ကို စတင်ရန်
 
 ```bash
 ./start.sh
 ```
 
-Default port —
+### ပေါ့(Port) ဖြေရှင်းနည်း
 
-```text
-8000
-```
-
-အခြား port သုံးချင်ရင် —
+- default port: `8000`
+- အခြား port သုံးရန်:
 
 ```bash
 PORT=8001 ./start.sh
 ```
 
-browser URL မှာ public host ကိုပဲ ပြသချင်ရင် —
+### Browser URL ကို public host ဖြင့် ပြရန်
 
 ```bash
 PUBLIC_HOST=YOUR_PUBLIC_HOST ./start.sh
 ```
 
-TLS ကို အသုံးပြုချင်ရင် —
+### TLS ကို ဖွင့်ရန်
 
 ```bash
 SSL_CERTFILE=/path/to/fullchain.pem SSL_KEYFILE=/path/to/privkey.pem ./start.sh
 ```
 
-## Browser မှတဆင့် ဝင်ရောက်ကြည့်ရန်
+## ၆။ browser ဖြင့် ဝင်ရောက်ကြည့်ရန်
 
-local access စမ်းရန် —
+- local access:
 
 ```text
 http://127.0.0.1:8000
 ```
 
-public access အနေနဲ့ —
+- LAN/Public access (server IP or host ကို သုံးပါ):
 
 ```text
 http://YOUR_SERVER_IP:8000
 ```
 
-TLS ဖွင့်ထားလျှင် —
+- HTTPS သုံးချင်လျှင်:
 
 ```text
 https://YOUR_SERVER_IP:8000
 ```
 
-## Helper Scripts
+## ၇။ helper scripts များ
 
-- `open_browser.ps1` — dashboard URL ကို browser မှာဖွင့်ပေးတာ
-- `deploy_to_ubuntu.ps1` — repo ကို sync လုပ်ပြီး remote က server ကို စတင်ပေးတယ်
-- `logs.sh` နဲ့ `stop.sh` — Ubuntu မှာ service ကို စီမံခန့်ခွဲဖို့
+- `open_browser.ps1` — browser မှာ dashboard URL ကို ဖွင့်ပေးသည်
+- `deploy_to_ubuntu.ps1` — project ကို remote သို့ sync လုပ်ပြီး server ကို စတင်ပေးသည်
+- `logs.sh` — log output များကို ကြည့်ရန်
+- `stop.sh` — server ရပ်ရန်
 
-browser URL ကို သတ်မှတ်နိုင်သည် —
+browser URL ကို အောက်ပါအတိုင်း သတ်မှတ်နိုင်သည်။
 
 ```powershell
 $env:MLPD_URL = "http://YOUR_SERVER_IP:8000"
 .\open_browser.ps1
 ```
 
-## Paddle OCR ရဲ့ ပမာဏ/အရမ်းမြန်အောင် စီစစ်ခြင်း (Speed Tuning)
+## ၈။ Paddle OCR များအတွက် speed tuning
 
-app က PaddleOCR ကို ဦးစားပေးသုံးပါတယ်။
-
-အသုံးဝင်တဲ့ override များ —
+app က PaddleOCR ကို နောက်ဆုံး အနေဖြင့် အသုံးပြုပါတယ်။
 
 ```bash
 MLPD_USE_PADDLE_OCR=1
@@ -140,29 +137,27 @@ MLPD_PADDLE_DET_MODEL_NAME=PP-OCRv5_server_det
 MLPD_PADDLE_REC_MODEL_NAME=en_PP-OCRv5_mobile_rec
 ```
 
-မှတ်ချက်များ —
+### မှတ်ချက်များ
 
-- CPU-only ဆာဗာများအတွက် `MLPD_PADDLE_FAST_MODE=1` က အတော်ဆိုးကျေနပ်စေသည်
-- အနာဂတ်တွင် `.paddlex/official_models/` အောက်တွင် ပိုဖေါ့ပါးတဲ့ detector model တစ်ခုထည့်မယ်ဆိုရင် `MLPD_PADDLE_DET_MODEL_NAME` ကို အဲဒီ folder နာမည်အတိုင်း ပြင်ပါ
-- Paddle import ပြဿနာဖြစ်လာရင် app က EasyOCR သို့ fallback လုပ်ပါလိမ့်မယ်
+- CPU-only ဆာဗာများတွင် `MLPD_PADDLE_FAST_MODE=1` အထူးသင့်တော်သည်
+- `.paddlex/official_models/` ထဲသို့ lighter detector model တစ်ခု ထည့်လိုလျှင် `MLPD_PADDLE_DET_MODEL_NAME` ကို ထို folder နာမည်ဖြင့် ပြင်ပါ
+- Paddle import မအောင်မြင်ပါက app က EasyOCR သို့ fallback လုပ်ပါသည်
 
-## မွတ်တမ်းများ (Logs) နှင့် Data
+## ၉။ logs နှင့် data ဖိုင်များ
 
-- `captures/` — plate crops များကို သိမ်းဆည်းထားသည်
-- `data/` — SQLite database ကို သိမ်းဆည်းထားသည်
-- `detection_log.txt` — စာသား log များကို သိမ်းဆည်းထားသည်
-- `server.log` နှင့် `server-error.log` — runtime output များကို သိမ်းဆည်းထားသည်
+- `captures/` — plate crop image များ သိမ်းဆည်းသည်
+- `data/` — SQLite database သိမ်းဆည်းသည်
+- `detection_log.txt` — text log များ သိမ်းဆည်းသည်
+- `server.log`, `server-error.log` — runtime output များ သိမ်းဆည်းသည်
 
-## ပြဿနာဖြေရှင်းခြင်း (Troubleshooting)
+## ၁၀။ ပြဿနာဖြေရှင်းခြင်း
 
-- app မစတင်နိုင်လျှင် `server-error.log` ကို စစ်ပါ
-- OCR မြန်ပျော့မလာပါက logs တွင် Paddle သုံးနေရတာကို စစ်ပါ
-- Browser access မရပါက firewall မှာ ပေါ့(ports) သူ့ကို ဖွင့်ထားကြောင်း စစ်ပါ
-- Python version ပြောင်းလဲလိုက်ရင် `.venv` ကို ပြန်ဖျက်ပြီး ပြန်တည်ဆောက်ပါ
+- app မစတင်နိုင်ပါက `server-error.log` ကို စစ်ပါ
+- OCR နှေးနေပါက logs မှ Paddle သုံးနေကြောင်း စစ်ပါ
+- browser access မရပါက firewall သို့ port ကို ဖွင့်ထားကြောင်း စစ်ပါ
+- Python version ပြောင်းလဲပါက `.venv` ကို ဖျက်ပြီး ပြန်တည်ဆောက်ပါ
 
-## Systemd
-
-optional service install နမူနာ —
+## ၁၁။ optional systemd service
 
 ```bash
 sudo cp mlpd.service /etc/systemd/system/mlpd.service
@@ -171,14 +166,9 @@ sudo systemctl enable --now mlpd
 sudo systemctl status mlpd
 ```
 
-## ဆက်စပ်ဖိုင်များ
+## ၁၂။ ဆက်စပ် ဖိုင်များ
 
-- [README.md](README.md)
-- [setup_ubuntu.sh](setup_ubuntu.sh)
-- [start.sh](start.sh)
-
----
-
-ဒီဖိုင်ကို workspace အောက် `MLPD_ubuntu` ဖိုလ်ဒါထဲမှာ `README_UBUNTU_mm.md` အဖြစ် ထည့်လိုက်ပါတယ်။
-
-သင်လိုချင်ရင် original `README_UBUNTU.md` ကိုလည်း အစားထိုးပေးနိုင်ပါတယ်၊ ဒါမှမဟုတ် `.sh` ဖိုင်တွေ LF ပြင်ပေးဖို့ ကူညီပေးပါမယ်။
+- `README.md`
+- `setup_ubuntu.sh`
+- `start.sh`
+- `deploy_to_ubuntu.ps1`
