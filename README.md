@@ -1,5 +1,5 @@
 # MLPD Ubuntu
-
+#Read this first then readme-mm.md
 MLPD Ubuntu is a license plate detection and OCR web app built for local use
 and Ubuntu server deployment. It combines:
 
